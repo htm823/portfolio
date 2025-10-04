@@ -1,11 +1,8 @@
 @charset "utf-8";
 
 /* ========================================
-   Reset & Base
-   ======================================== */
-/* Reset or normalize styles */
-/* Base typography, body, links, lists, etc. */
-
+   Reset & Base Styles
+======================================== */
 *,
 ::after,
 ::before {
@@ -19,16 +16,15 @@
 
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
 }
 
 body {
-	font-family: Outfit;
+	font-family: 'Outfit', sans-serif;
 	font-size: 1.8rem;
+	line-height: 1.6;
 	color: #1a1a1a;
-}
-
-ul {
-	list-style: none;
+	background-color: #fff;
 }
 
 a {
@@ -36,11 +32,29 @@ a {
 	color: inherit;
 }
 
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* ========================================
+   Display Control
+======================================== */
+.pc-only {
+	display: block;
+}
+
+.sp-only {
+	display: none;
+}
+
 /* ========================================
    Header
-   ======================================== */
-/* Header container, logo, navigation menu */
-
+======================================== */
 header {
 	width: 100%;
 	background-color: #9b83b8;
@@ -50,9 +64,14 @@ header {
 .header-container {
 	max-width: 1200px;
 	margin: 0 auto;
-	display: flex;
 	padding: 2rem 0;
+	display: flex;
 	justify-content: space-between;
+}
+
+.header-logo-menu {
+	display: flex;
+	align-items: center;
 }
 
 .header-logo-menu a:nth-child(1) {
@@ -64,38 +83,46 @@ header {
 }
 
 .header-logo-menu img {
-	display: block;
 	width: 8rem;
 	height: 5.6rem;
 }
 
 .sp-menu-icon {
 	display: none;
-}
-
-.header-logo-menu {
-	display: flex;
+	font-size: 3.5rem;
+	color: #fff;
 }
 
 .header-menu-list {
 	display: flex;
-	padding: 1.5rem 0;
 	gap: 4rem;
+	padding: 1.5rem 0;
+	font-size: 1.8rem;
 }
 
-.header-menu-list>li>a {
-	transition: all 0.3s;
+.header-menu-list > li > a {
+	position: relative;
+	transition: opacity 0.3s;
 }
 
-.header-menu-list>li>a:hover {
-	opacity: 0.5;
+.header-menu-list > li > a::after {
+	content: '';
+	position: absolute;
+	bottom: -0.5rem;
+	left: 0;
+	width: 0;
+	height: 0.2rem;
+	background-color: #fff;
+	transition: width 0.3s ease;
+}
+
+.header-menu-list > li > a:hover::after {
+	width: 100%;
 }
 
 /* ========================================
    Hero Section
-   ======================================== */
-/* Profile image, introduction text, bio */
-
+======================================== */
 #hero {
 	width: 100%;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -106,18 +133,23 @@ header {
 
 .hero-container {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 	display: flex;
 }
 
-.hero-container>img {
-	display: block;
+.hero-container > img {
 	width: 53rem;
 	height: 53rem;
 }
 
-.introduction>h1 {
+.introduction {
+	padding: 17rem 2rem 2rem 2rem;
+	line-height: 1.6;
+}
+
+.introduction h1 {
 	font-size: 4.2rem;
+	margin: 0 0 1rem 0;
 }
 
 .job-title {
@@ -126,16 +158,14 @@ header {
 	margin: 0 0 2rem 0;
 }
 
-.introduction {
-	padding: 17rem 2rem 2rem 2rem;
+.bio {
+	font-size: 1.8rem;
 	line-height: 1.6;
 }
 
 /* ========================================
    Latest Works Section
-   ======================================== */
-/* Works container, list styles, figure/description */
-
+======================================== */
 #latest-works {
 	width: 100%;
 	padding: 2rem 0 8rem 0;
@@ -150,7 +180,7 @@ header {
 	padding: 5rem 0;
 }
 
-.latest-works-container>h2 {
+.latest-works-container h2 {
 	font-size: 3.6rem;
 	text-align: center;
 	margin: 0 0 4rem 0;
@@ -161,7 +191,7 @@ header {
 	justify-content: space-between;
 }
 
-.latest-works-list>li {
+.latest-works-list > li {
 	width: 32%;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	border-radius: 1rem;
@@ -170,21 +200,23 @@ header {
 	background-color: #fff;
 }
 
-.latest-works-list>li:hover {
+.latest-works-list > li:hover {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.pc-only {
-	display: block;
+.latest-works-list figure {
 	width: 100%;
-	/* height: 22rem; */
+}
+
+.latest-works-list img {
+	width: 100%;
 	margin: 0 0 1rem 0;
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 1rem;
 }
 
-.sp-only {
-	display: none;
+.latest-works-list figcaption {
+	padding: 0;
 }
 
 .category {
@@ -193,20 +225,19 @@ header {
 	color: #fff;
 	padding: 0.2rem 0.7rem;
 	border-radius: 0.5rem;
+	font-size: 1.4rem;
 }
 
 .work-title {
 	display: block;
 	line-height: 1;
 	padding: 1rem 0 0 1rem;
+	font-size: 1.8rem;
 }
-
 
 /* ========================================
    Footer
-   ======================================== */
-/* Footer container, copyright, social icons */
-
+======================================== */
 footer {
 	width: 100%;
 	background-color: #f8f8f8;
@@ -218,12 +249,13 @@ footer {
 .scroll-to-top {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 15rem;
 	height: 15rem;
 	position: absolute;
-	top: -7rem;
-	left: 45%;
-	margin: 0 auto;
+	top: -7.5rem;
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: #f8f8f8;
 	z-index: 1;
 	border-radius: 50%;
@@ -234,21 +266,26 @@ footer {
 	font-size: 7rem;
 	color: #fff;
 	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	margin: -6rem 0 0 0;
+	transition: all 0.3s ease;
 }
 
 .scroll-to-top a {
-	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.scroll-to-top a:hover {
-	margin: -1rem 0 0 0;
+.scroll-to-top a:hover .bi-chevron-up {
+	margin: -7.5rem 0 0 0;
 }
 
 .footer-container {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background-color: #f8f8f8;
 	position: relative;
 	z-index: 2;
@@ -261,13 +298,13 @@ footer {
 	height: 8rem;
 	background-color: #f8f8f8;
 	position: absolute;
-	margin: -1.7rem 0 0 0;
-	left: 35%;
+	top: -1.7rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.footer-container > small {
+.footer-container small {
 	font-size: 1.8rem;
-	display: block;
 	padding: 1rem 0;
 }
 
@@ -290,15 +327,14 @@ footer {
 }
 
 /* ========================================
-   Media Queries
-   ======================================== */
-/* Responsive adjustments for tablet and mobile */
-
+   Media Queries - Tablet
+======================================== */
 @media (max-width: 768px) {
 	header {
 		position: relative;
 		z-index: 3;
 	}
+
 	.header-container {
 		width: 100%;
 		flex-direction: column;
@@ -314,8 +350,6 @@ footer {
 
 	.sp-menu-icon {
 		display: block;
-		font-size: 3.5rem;
-		color: #fff;
 	}
 
 	.header-logo-menu img {
@@ -336,16 +370,16 @@ footer {
 		padding: 0;
 	}
 
-	.header-menu-list>li {
+	.header-menu-list > li {
 		border-top: 1px solid #e0e0e0;
 		padding: 2rem 0;
 	}
 
-	.header-menu-list>li>a {
-		transition: all 0.3s;
+	.header-menu-list > li > a::after {
+		display: none;
 	}
 
-	.header-menu-list>li>a:hover {
+	.header-menu-list > li > a:hover {
 		opacity: 0.5;
 	}
 
@@ -355,11 +389,10 @@ footer {
 
 	.hero-container {
 		flex-direction: column;
-		align-items: center;
 		text-align: center;
 	}
 
-	.hero-container>img {
+	.hero-container > img {
 		width: 60rem;
 		height: auto;
 		margin: -2rem 0 0 0;
@@ -376,7 +409,7 @@ footer {
 		padding: 0 4rem;
 	}
 
-	.latest-works-list>li {
+	.latest-works-list > li {
 		width: 100%;
 	}
 
@@ -404,24 +437,18 @@ footer {
 	.footer-container::before {
 		display: none;
 	}
-
-	.scroll-to-top {
-		left: 40%;
-	}
-
-	.scroll-to-top a:hover {
-		margin: 0;
-	}
 }
 
+/* ========================================
+   Media Queries - Mobile
+======================================== */
 @media (max-width: 630px) {
-	.hero-container>img {
+	.hero-container > img {
 		width: 100%;
-		height: auto;
 		margin: -2rem 0 0 0;
 	}
 
-	.introduction > h1 {
+	.introduction h1 {
 		font-size: 4rem;
 	}
 
@@ -429,8 +456,7 @@ footer {
 		font-size: 2.1rem;
 	}
 
-
-	.latest-works-container>h2 {
+	.latest-works-container h2 {
 		font-size: 3.4rem;
 	}
 
@@ -440,7 +466,12 @@ footer {
 		top: -5rem;
 	}
 
-	.scroll-to-top .bi-chevron-up  {
+	.scroll-to-top .bi-chevron-up {
 		font-size: 5rem;
+		margin: -4rem 0 0 0;
+	}
+
+	.scroll-to-top a:hover .bi-chevron-up {
+		margin: -4rem 0 0 0;
 	}
 }
