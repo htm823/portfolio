@@ -44,30 +44,30 @@ html {
   --color-text-dark: #27232C;
   --color-text-light: #4A4453;
   --color-lightest: #fff;
-  --font-base: "Inter", sans-serif;
+  --font-base: "Inter", "IBM Plex Sans JP", sans-serif;
   --font-heading: "Playfair Display", sans-serif;
-  --font-size-base: 1.6rem;
+  --font-size-base: 1.8rem;
   --line-height-base: 2.4;
 }
 
 body {
-  font-family: --font-base;
-  font-size: --font-size-base;
-  line-height: --line-height-base;
-  color: --color-text-dark;
-  background: --color-lightest;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text-dark);
+  background: var(--color-lightest);
 }
 
 .intro {
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.18) 30%, rgba(255, 255, 255, 0) 65%), var(--color-primary-dark);
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateY(0);
   transition: transform 1s cubic-bezier(0.77, 0, 0.18, 1);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.18) 30%, rgba(255, 255, 255, 0) 65%), var(--color-primary-dark);
 }
 .intro.hide {
   transform: translateY(-100%);
@@ -90,4 +90,4 @@ body {
   height: 63px;
   display: block;
   transition: left 0.45s cubic-bezier(0.25, 0.8, 0.25, 1), top 0.45s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style-en.css.map */
