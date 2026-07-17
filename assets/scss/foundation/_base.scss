@@ -1,0 +1,27 @@
+html {
+	font-size: 10px;
+}
+
+:root {
+	--color-primary-dark: #9B83B8;
+	--color-primary-light: #D1BFE8;
+
+	--color-text-dark: #27232C;
+	--color-text-light: #4A4453;
+
+	--color-lightest: #fff;
+
+	--font-base: "Inter", sans-serif;
+	--font-heading: "Playfair Display", sans-serif;
+
+	--font-size-base: 1.6rem;
+	--line-height-base: 2.4;
+}
+
+body {
+	font-family: --font-base;
+	font-size: --font-size-base;
+	line-height: --line-height-base;
+	color: --color-text-dark;
+	background: --color-lightest;
+}

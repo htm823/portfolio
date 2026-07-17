@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+
+ul,
+ol {
+	list-style: none;
+}
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
