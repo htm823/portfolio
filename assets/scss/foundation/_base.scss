@@ -11,17 +11,17 @@ html {
 
 	--color-lightest: #fff;
 
-	--font-base: "Inter", sans-serif;
+	--font-base: "Inter", "IBM Plex Sans JP", sans-serif;
 	--font-heading: "Playfair Display", sans-serif;
 
-	--font-size-base: 1.6rem;
+	--font-size-base: 1.8rem;
 	--line-height-base: 2.4;
 }
 
 body {
-	font-family: --font-base;
-	font-size: --font-size-base;
-	line-height: --line-height-base;
-	color: --color-text-dark;
-	background: --color-lightest;
+	font-family: var(--font-base);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-base);
+	color: var(--color-text-dark);
+	background: var(--color-lightest);
 }
