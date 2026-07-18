@@ -1,0 +1,27 @@
+.hero {
+	padding: 8rem 0;
+
+	&__inner {
+		padding: 0 4.8rem;
+		display: flex;
+		gap: 5.6rem;
+		align-items: center;
+	}
+
+	&__portrait {
+		width: 32rem;
+	}
+
+	&__name {
+		font-size: 2rem;
+		display: block;
+		font-weight: bold;
+		color: var(--color-text-light);
+	}
+
+	&__activity {
+		display: block;
+		margin: 0.2rem 0 0;
+		color: #7a7883;
+	}
+}

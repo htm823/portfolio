@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -57,9 +58,8 @@
 	</div>
 	<div id="home" class="page">
 		<header class="header">
-			<div class="header__inner">
+			<div class="header__inner container">
 				<h1 class="header__title">Hatsumi</h1>
-				<!-- spacing: component / color: unique -->
 				<nav class="navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
@@ -78,44 +78,44 @@
 				</nav>
 				<ul class="language">
 					<li class="language__item">
-						<a href="/en/index.html">EN</a>
+						<a href="/en/index.html" class="language__link--active">EN</a>
 					</li>
 					<li class="language__item">
-						<a href="/ja/index.html">JA</a>
+						<a href="/ja/index.html" class="language__link">JA</a>
 					</li>
 				</ul>
 			</div>
 		</header>
 		<main>
-			<div class="hero">
+			<section id="hero-sec" class="hero">
 				<div class="hero__inner container">
 					<figure class="hero__figure">
-						<img src="../assets/img/face.png" alt="Portrait of Hatsumi Shimizu">
+						<img class="hero__portrait" src="../assets/img/face.png" alt="Portrait of Hatsumi Shimizu">
 					</figure>
 					<div class="hero__introduction">
-						<p class="hero__philosophy">
+						<h2 class="hero__philosophy">
 							<span class="hero__tagline">From ambiguity to clarity.</span>
 							<span class="hero__detail">Reducing cognitive load by turning complexity into structure.</span>
-						</p>
+						</h2>
 						<p class="hero__about">
 							<span class="hero__name">Hatsumi Shimizu</span>
 							<span class="hero__activity">Web Development & Writing</span>
 						</p>
-						<div class="hero__contact btn-link">
-							<a href="#">Contact</a>
+						<div class="hero__contact">
+							<a href="#" class="btn-link">Contact</a>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="latest-works">
-				<div class="latest-works__container">
+			</section>
+			<section id="latest-works-sec" class="latest-works">
+				<div class="latest-works__inner container">
 					<h2 class="latest-works__title">Latest Works</h2>
 					<ul class="latest-works__cards">
 						<li class="card">
 							<a href="#" class="card__link">
 								<div class="card__inner">
 									<figure class="card__figure">
-										<img class="card__img" src="" alt="">
+										<img class="card__img" src="../assets/img/global-music-finder.png" alt="Screenshot of Global Music Finder app">
 									</figure>
 									<dl class="card__descrption">
 										<dt class="card__title">Global Music Finder</dt>
@@ -128,7 +128,7 @@
 							<a href="#" class="card__link">
 								<div class="card__inner">
 									<figure class="card__figure">
-										<img class="card__img" src="" alt="">
+										<img class="card__img" src="../assets/img/daily-organiser.png" alt="Screenshot of Daily Organiser app">
 									</figure>
 									<dl class="card__descrption">
 										<dt class="card__title">Daily Organiser</dt>
@@ -141,22 +141,22 @@
 							<a href="#" class="card__link">
 								<div class="card__inner">
 									<figure class="card__figure">
-										<img class="card__img" src="" alt="">
+										<img class="card__img" src="../assets/img/to-do-list.png" alt="Screenshot of To-do List app">
 									</figure>
 									<dl class="card__descrption">
-										<dt class="card__title">Global Music Finder</dt>
-										<dd class="card__detail">Music Search App</dd>
+										<dt class="card__title">To-do List</dt>
+										<dd class="card__detail">Minimal to-do list app</dd>
 									</dl>
 								</div>
 							</a>
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__inner container">
-				<small class="footer__copyright">&copy; 2026 Hatsumi Shimizu. All rights reserved.</small>
+				<small class="footer__copyright">&copy; 2026 Hatsumi Shimizu</small>
 				<!-- spacing: component / color: unique -->
 				<nav class="navigation">
 					<ul class="navigation__list">

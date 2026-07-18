@@ -3,6 +3,7 @@ html {
 }
 
 :root {
+	--color-primary-darkest: #3E3454;
 	--color-primary-dark: #9B83B8;
 	--color-primary-light: #D1BFE8;
 
@@ -15,13 +16,20 @@ html {
 	--font-heading: "Playfair Display", sans-serif;
 
 	--font-size-base: 1.8rem;
-	--line-height-base: 2.4;
+	--font-size-sm: 1.6rem;
+
+	--container-width: 1040px;
 }
 
 body {
 	font-family: var(--font-base);
 	font-size: var(--font-size-base);
-	line-height: var(--line-height-base);
 	color: var(--color-text-dark);
 	background: var(--color-lightest);
+}
+
+.container {
+	width: 100%;
+	max-width: var(--container-width);
+	margin: 0 auto;
 }

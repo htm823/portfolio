@@ -1,0 +1,11 @@
+.btn-link {
+	display: inline-block;
+	background-color: var(--color-primary-dark);
+	color: var(--color-lightest);
+	padding: .8rem 2.4rem;
+	transition: .3s opacity ease;
+
+	&:hover {
+		opacity: .8;
+	}
+}
