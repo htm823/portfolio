@@ -1,29 +1,54 @@
 .navigation {
 
 	@media (max-width: 768px) {
-		display: none;
+		width: 100%;
 	}
-	
+
 	&__list {
 		display: flex;
 		align-items: center;
 		gap: 3.6rem;
+
+		@media (max-width: 768px) {
+			display: block;
+			gap: 0;
+		}
+	}
+
+	&__item {
+		@media (max-width: 768px) {
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid rgba(0, 0, 0, .1);
+		}
 	}
 
 	&__link {
 		&--dark {
-			transition: color .3s ease;
+			transition: color 0.3s ease;
+
+			@media (max-width: 768px) {
+				display: flex;
+				justify-content: center;
+				padding: 1.8rem 0;
+				width: 100%;
+				transition: all .3s ease;
+			}
 
 			&:hover {
 				color: var(--color-primary-dark);
+
+				@media (max-width: 768px) {
+					background-color: rgba(155, 131, 184, 0.1);
+				}
 			}
 		}
 
 		&--light {
-			transition: opacity .3s ease;
+			transition: opacity 0.3s ease;
 
 			&:hover {
-				opacity: .7;
+				opacity: 0.7;
 			}
 		}
 	}

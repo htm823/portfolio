@@ -75,30 +75,37 @@
 		<header class="header">
 			<div class="header__inner container">
 				<h1 class="header__title">Hatsumi</h1>
-				<nav class="navigation">
-					<ul class="navigation__list">
-						<li class="navigation__item">
-							<a href="/en/index.html" class="navigation__link--dark">Home</a>
+				<button id="hamburger-menu" class="btn-menu" aria-expanded="false">
+					<span class="btn-bar"></span>
+					<span class="btn-bar"></span>
+					<span class="btn-bar"></span>
+				</button>
+				<div id="hamburger-items" class="header__menu">
+					<nav class="navigation">
+						<ul class="navigation__list">
+							<li class="navigation__item">
+								<a href="/ja/index.html" class="navigation__link--dark">Home</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link--dark">About</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link--dark">Works</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link--dark">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="language">
+						<li class="language__item">
+							<a href="/en/index.html" class="language__link">EN</a>
 						</li>
-						<li class="navigation__item">
-							<a href="#" class="navigation__link--dark">About</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#" class="navigation__link--dark">Works</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#" class="navigation__link--dark">Contact</a>
+						<li class="language__item">
+							<a href="/ja/index.html" class="language__link--active">JA</a>
 						</li>
 					</ul>
-				</nav>
-				<ul class="language">
-					<li class="language__item">
-						<a href="/en/index.html" class="language__link">EN</a>
-					</li>
-					<li class="language__item">
-						<a href="/ja/index.html" class="language__link--active">JA</a>
-					</li>
-				</ul>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -180,7 +187,7 @@
 				<nav class="navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<a href="/en/index.html" class="navigation__link--light">Home</a>
+							<a href="/ja/index.html" class="navigation__link--light">Home</a>
 						</li>
 						<li class="navigation__item">
 							<a href="#" class="navigation__link--light">About</a>
@@ -197,6 +204,7 @@
 		</footer>
 	</div>
 	<script src="../assets/js/intro.js"></script>
+	<script src="../assets/js/hamburger-menu.js"></script>
 </body>
 
 </html>

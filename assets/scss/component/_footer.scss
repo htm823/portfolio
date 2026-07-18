@@ -12,4 +12,12 @@
 		display: block;
 		font-size: var(--font-size-sm);
 	}
+
+	.navigation {
+		display: block;
+		
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
 }
