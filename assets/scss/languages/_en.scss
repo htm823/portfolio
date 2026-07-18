@@ -17,6 +17,12 @@ body {
 		color: var(--color-text-light);
 	}
 
+	&__introduction {
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
 	&__about {
 		margin: 4.8rem 0 0;
 	}

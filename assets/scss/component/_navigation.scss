@@ -1,4 +1,9 @@
 .navigation {
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+	
 	&__list {
 		display: flex;
 		align-items: center;
