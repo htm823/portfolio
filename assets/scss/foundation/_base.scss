@@ -1,0 +1,35 @@
+html {
+	font-size: 10px;
+}
+
+:root {
+	--color-primary-darkest: #3E3454;
+	--color-primary-dark: #9B83B8;
+	--color-primary-light: #D1BFE8;
+
+	--color-text-dark: #27232C;
+	--color-text-light: #4A4453;
+
+	--color-lightest: #fff;
+
+	--font-base: "Inter", "IBM Plex Sans JP", sans-serif;
+	--font-heading: "Playfair Display", sans-serif;
+
+	--font-size-base: 1.8rem;
+	--font-size-sm: 1.6rem;
+
+	--container-width: 1040px;
+}
+
+body {
+	font-family: var(--font-base);
+	font-size: var(--font-size-base);
+	color: var(--color-text-dark);
+	background: var(--color-lightest);
+}
+
+.container {
+	width: 100%;
+	max-width: min(100% - 48px, var(--container-width));
+	margin: 0 auto;
+}

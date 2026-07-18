@@ -1,0 +1,67 @@
+.card {
+	width: 32rem;
+
+	@media (max-width: 1040px) {
+		width: 100%;
+	}
+
+	&--hide {
+		@media (max-width: 1040px) {
+			display: none;
+		}
+
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	&__link {
+		display: block;
+		transition: 0.3s opacity ease;
+		position: relative;
+
+		&::before {
+			content: '\f054';
+			font-family: 'Font Awesome 7 Free';
+			font-weight: 900;
+			position: absolute;
+			bottom: 0.8rem;
+			right: 1.6rem;
+			color: var(--color-primary-dark);
+			font-size: 2.4rem;
+			opacity: 0;
+			transition:
+				opacity 0.3s ease,
+				right 0.3s ease;
+		}
+
+		&:hover {
+			opacity: 0.7;
+
+			&::before {
+				opacity: 1;
+				right: 0.8rem;
+			}
+		}
+	}
+
+	&__detail {
+		margin: 0;
+		font-size: var(--font-size-sm);
+		color: #7a7883;
+	}
+
+	&__figure {
+		width: 32rem;
+		margin: 0 0 1.6rem;
+
+		@media (max-width: 1040px) {
+			width: 100%;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+	}
+}

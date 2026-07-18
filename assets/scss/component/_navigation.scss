@@ -1,0 +1,30 @@
+.navigation {
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+	
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 3.6rem;
+	}
+
+	&__link {
+		&--dark {
+			transition: color .3s ease;
+
+			&:hover {
+				color: var(--color-primary-dark);
+			}
+		}
+
+		&--light {
+			transition: opacity .3s ease;
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}
