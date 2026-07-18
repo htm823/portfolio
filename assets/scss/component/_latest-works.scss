@@ -1,6 +1,10 @@
 .latest-works {
 	padding: 8rem 0 16rem;
 
+	@media (max-width: 768px) {
+		padding: 5.6rem 0 11.2rem;
+	}
+
 	&__title {
 		font-family: var(--font-heading);
 		font-size: 2.8rem;
@@ -10,6 +14,14 @@
 		display: flex;
 		gap: 2rem;
 		justify-content: space-between;
+
+		@media (max-width: 1040px) {
+			gap: 3.2rem;
+		}
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 
 	&__title {
