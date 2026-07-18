@@ -4,6 +4,7 @@
 
 	@media (max-width: 768px) {
 		padding: 1.6rem 0;
+		position: relative;
 	}
 
 	&__inner {
@@ -17,6 +18,31 @@
 		font-size: 2.4rem;
 		font-weight: bold;
 	}
+
+	&__menu {
+		display: flex;
+		gap: 6rem;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+			position: absolute;
+			top: 7.14rem;
+			left: 0;
+			right: 0;
+			background: var(--color-lightest);
+			clip-path: inset(0 0 100% 0);
+			opacity: 0;
+			transition:
+				clip-path .3s ease,
+				opacity .3s ease;
+
+			&.is-open {
+				clip-path: inset(0 0 0 0);
+				opacity: 1;
+			}
+		}
+	}
 }
 
 .language {
@@ -27,17 +53,12 @@
 	position: relative;
 
 	@media (max-width: 768px) {
-		display: none;
-	}
-
-	&::before {
-		content: '|';
-		position: absolute;
-		left: 48%;
+		padding: 1.8rem 2.4rem 1.8rem 0;
+		justify-content: end;
 	}
 
 	&__link {
-		transition: color .3s ease;
+		transition: color 0.3s ease;
 
 		&:hover {
 			color: var(--color-primary-dark);
@@ -49,4 +70,3 @@
 		}
 	}
 }
-

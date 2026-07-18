@@ -7,13 +7,14 @@
 	justify-content: center;
 	transform: translateY(0);
 	transition: transform 1s cubic-bezier(.77,0,.18,1);
-	background: radial-gradient(
-			circle at center,
-			rgba(255,255,255,.55) 0%,
-			rgba(255,255,255,.18) 30%,
-			rgba(255,255,255,0) 65%
-		),
-		var(--color-primary-dark);
+	background:
+	radial-gradient(
+		circle at center,
+		rgba(155, 131, 184, 0.6) 0%,
+		rgba(155, 131, 184, 0.9) 30%,
+		rgba(155, 131, 184, 1) 100%
+	),
+	#fff;
 
 	&.hide {
 		transform: translateY(-100%);
