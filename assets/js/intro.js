@@ -1,5 +1,10 @@
 const introTiles = document.getElementById('icon-tiles');
 const intro = document.getElementById('intro-animation');
+const introPlayed = sessionStorage.getItem('introPlayed');
+
+if (introPlayed && intro) {
+	intro.remove();
+}
 
 if (introTiles) {
 	const tiles = introTiles.querySelectorAll('.intro__tile');
@@ -57,6 +62,12 @@ if (introTiles) {
 	setTimeout(() => {
 		if (intro) {
 			intro.classList.add('hide');
+			setTimeout(() => {
+				sessionStorage.setItem('introPlayed', 'true');
+			}, 1000);
 		}
 	}, 5000);
+
+	// Clear intro played flag for debug
+	// sessionStorage.removeItem('introPlayed');
 }
