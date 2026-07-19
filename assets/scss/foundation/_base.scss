@@ -33,3 +33,19 @@ body {
 	max-width: min(100% - 48px, var(--container-width));
 	margin: 0 auto;
 }
+
+.section {
+	padding: 8rem 0;
+
+	@media (max-width: 768px) {
+		padding: 5.6rem 0;
+	}
+
+	&--last {
+		padding: 8rem 0 16rem;
+
+		@media (max-width: 768px) {
+		padding: 5.6rem 0 11.2rem;
+	}
+	}
+}
