@@ -37,3 +37,9 @@ body {
 		margin: 0 0 .8rem;
 	}
 }
+
+.contact {
+	&__tagline {
+		font-size: var(--font-size-base);
+	}
+}
