@@ -478,20 +478,20 @@ body {
   width: 100%;
 }
 .contact__figure {
-  width: 32rem;
+  width: 40rem;
 }
 @media (max-width: 768px) {
   .contact__figure {
-    width: 28rem;
+    width: 32rem;
   }
 }
 .contact__portrait {
   width: 100%;
-  min-width: 32rem;
+  min-width: 40rem;
 }
 @media (max-width: 768px) {
   .contact__portrait {
-    min-width: 28rem;
+    min-width: 32rem;
   }
 }
 .contact__tools {
