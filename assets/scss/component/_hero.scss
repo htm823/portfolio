@@ -2,19 +2,27 @@
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 	&__inner {
-		padding: 0 4.8rem;
 		display: flex;
-		gap: 5.6rem;
+		justify-content: space-between;
 		align-items: center;
+		gap: 5.6rem;
 
 		@media (max-width: 768px) {
-			padding: 0;
 			flex-direction: column;
 		}
 	}
 
-	&__portrait {
+	&__figure {
 		width: 32rem;
+	}
+
+	&__portrait {
+		width: 100%;
+		min-width: 32rem;
+	}
+
+	&__introduction {
+		width: 100%;
 	}
 
 	&__name {

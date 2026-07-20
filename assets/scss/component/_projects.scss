@@ -1,0 +1,45 @@
+.projects {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 5.6rem;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	&__title {
+		font-size: 3.6rem;
+		font-family: "Playfair Display";
+	}
+
+	&__tagline {
+		margin: .4rem 0 0;
+	}
+
+	&__explore {
+		margin: 3.2rem 0 0;
+	}
+
+	&__figure {
+		width: 100%;
+		max-width: 40rem;
+
+		@media (max-width: 768px) {
+			max-width: none;
+		}
+	}
+
+	&__description {
+		width: 100%;
+	}
+
+	&__portfolio {
+		width: 100%;
+		min-width: 40rem;
+	}
+}
