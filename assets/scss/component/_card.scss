@@ -1,12 +1,21 @@
 .card {
-	width: 32rem;
+	max-width: 32rem;
+	min-width: 32rem;
+	width: calc(100% / 3 - 8rem);
+	flex: 1;
 
-	@media (max-width: 1040px) {
+	@media (max-width: 1102px) {
+		width: calc(100% / 2 - 4rem);
+		max-width: 49.95rem;
+	}
+
+	@media (max-width: 768px) {
 		width: 100%;
+		max-width: none;
 	}
 
 	&--hide {
-		@media (max-width: 1040px) {
+		@media (max-width: 1102px) {
 			display: none;
 		}
 
@@ -53,7 +62,7 @@
 	}
 
 	&__figure {
-		width: 32rem;
+		// width: 32rem;
 		margin: 0 0 1.6rem;
 
 		@media (max-width: 1040px) {

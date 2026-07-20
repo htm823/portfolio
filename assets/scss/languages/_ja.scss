@@ -18,15 +18,22 @@ body {
 	}
 
 	&__detail {
-		margin: 2.4rem 0 0 0;
+		margin: 1.6rem 0 0 0;
 		color: var(--color-text-light);
 	}
 
 	&__about {
-		margin: 3.2rem 0 0;
+		margin: 4.8rem 0 0;
 	}
 
 	&__contact {
-		padding: 1.6rem 0 0;
+		padding: 2.4rem 0 0;
+	}
+}
+
+.projects {
+	&__title {
+		font-size: var(--font-size-base);
+		margin: 0 0 .8rem;
 	}
 }
