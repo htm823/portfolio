@@ -33,7 +33,13 @@ body {
 }
 
 .projects {
-	&__title {
+	&__tagline {
+		font-size: 2rem;
+	}
+}
+
+.contact {
+	&__tagline {
 		font-size: 2rem;
 	}
 }
