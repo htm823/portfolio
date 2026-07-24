@@ -223,6 +223,11 @@ body {
 .navigation__link--dark.active {
   color: var(--color-primary-dark);
 }
+@media (max-width: 768px) {
+  .navigation__link--dark.active {
+    background-color: rgba(155, 131, 184, 0.1);
+  }
+}
 .navigation__link--dark:hover {
   color: var(--color-primary-dark);
 }
@@ -273,9 +278,8 @@ body {
   margin: 0.2rem 0 0;
   color: #7a7883;
 }
-.hero__contact .fa-envelope {
-  font-size: 2rem;
-  margin: 0 0.4rem 0 0;
+.hero__btn {
+  padding: 0.8rem 2.4rem;
 }
 
 .projects {
@@ -322,6 +326,9 @@ body {
   width: 100%;
   min-width: 40rem;
 }
+.projects__btn {
+  padding: 0.8rem 2.4rem;
+}
 
 .selected-projects__title {
   font-family: var(--font-heading);
@@ -334,15 +341,21 @@ body {
   }
 }
 
-.btn-link {
-  display: inline-block;
-  background-color: var(--color-primary-dark);
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-lightest);
-  padding: 0.8rem 2.4rem;
   transition: 0.3s opacity ease;
 }
-.btn-link:hover {
+.btn:hover {
   opacity: 0.8;
+}
+.btn-primary {
+  background-color: var(--color-primary-dark);
+}
+.btn-github {
+  background-color: #000;
 }
 .btn-menu {
   background-color: transparent;
@@ -500,24 +513,9 @@ body {
   gap: 2.4rem;
   padding: 3.2rem 0 0;
 }
-.contact__email {
-  display: inline-flex;
-  justify-content: center;
+.contact__btn {
   width: 11.2rem;
-}
-.contact__email .fa-envelope {
-  font-size: 2rem;
-  margin: 0 0.4rem 0 0;
-}
-.contact__github {
-  background-color: rgba(0, 0, 0, 0.8);
-  display: inline-flex;
-  justify-content: center;
-  width: 11.2rem;
-}
-.contact__github .fa-github {
-  font-size: 2rem;
-  margin: 0 0.4rem 0 0;
+  padding: 0.8rem 0;
 }
 
 .footer {

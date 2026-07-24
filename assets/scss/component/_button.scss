@@ -1,14 +1,20 @@
 .btn {
-	&-link {
-		display: inline-block;
-		background-color: var(--color-primary-dark);
-		color: var(--color-lightest);
-		padding: 0.8rem 2.4rem;
-		transition: 0.3s opacity ease;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-lightest);
+	transition: 0.3s opacity ease;
 
-		&:hover {
-			opacity: 0.8;
-		}
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&-primary {
+		background-color: var(--color-primary-dark);
+	}
+
+	&-github {
+		background-color: #000;
 	}
 
 	&-menu {

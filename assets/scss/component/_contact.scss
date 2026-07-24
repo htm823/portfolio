@@ -41,26 +41,8 @@
 		padding: 3.2rem 0 0;
 	}
 
-	&__email {
-		display: inline-flex;
-		justify-content: center;
+	&__btn {
 		width: 11.2rem;
-
-		.fa-envelope {
-			font-size: 2rem;
-			margin: 0 .4rem 0 0;
-		}
-	}
-
-	&__github {
-		background-color: rgba(0, 0, 0, 0.8);
-		display: inline-flex;
-		justify-content: center;
-		width: 11.2rem;
-
-		.fa-github {
-			font-size: 2rem;
-			margin: 0 .4rem 0 0;
-		}
+		padding: 0.8rem 0;
 	}
 }
