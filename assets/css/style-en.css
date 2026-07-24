@@ -518,6 +518,65 @@ body {
   padding: 0.8rem 0;
 }
 
+.project {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.project__inner {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+@media (max-width: 768px) {
+  .project__inner {
+    flex-direction: column;
+    align-items: inherit;
+    gap: 5.6rem;
+  }
+}
+.project__title {
+  font-family: var(--font-heading);
+  font-size: 3.6rem;
+  margin: 0 0 0.8rem 0;
+}
+.project__description {
+  width: 100%;
+}
+.project__figure {
+  width: 40rem;
+}
+@media (max-width: 768px) {
+  .project__figure {
+    width: 100%;
+  }
+}
+.project__img {
+  width: 100%;
+  min-width: 40rem;
+}
+@media (max-width: 768px) {
+  .project__img {
+    min-width: 100%;
+  }
+}
+.project__links {
+  display: flex;
+  gap: 2rem;
+  margin: 3.2rem 0 0 0;
+}
+.project__btn {
+  padding: 0.8rem 1.6rem;
+}
+
+.preview__title {
+  font-family: var(--font-heading);
+  margin: 0 0 4rem 0;
+  font-size: 3.2rem;
+}
+.preview__video {
+  max-width: 104rem;
+  width: 100%;
+}
+
 .footer {
   background-color: #000;
   color: var(--color-lightest);
