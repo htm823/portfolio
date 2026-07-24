@@ -36,6 +36,10 @@
 
 			&.active {
 				color: var(--color-primary-dark);
+				
+				@media (max-width: 768px) {
+					background-color: rgba(155, 131, 184, 0.1);
+				}
 			}
 
 			&:hover {
