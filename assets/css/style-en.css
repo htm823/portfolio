@@ -118,6 +118,21 @@ body {
   font-size: 2rem;
 }
 
+.features__list > dt {
+  font-size: 2rem;
+}
+.features__list > dt > .fa-square-check {
+  color: var(--color-primary-dark);
+  margin: 0 0.4rem 0 0;
+}
+.features__list > dd {
+  margin: 0 0 2.4rem 3rem;
+  color: var(--color-text-light);
+}
+.features__list > dd:last-child {
+  margin: 0 0 0 3rem;
+}
+
 .header {
   padding: 2.4rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -584,6 +599,15 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .background__title {
+  font-size: 3.2rem;
+  font-family: var(--font-heading);
+  margin: 0 0 4rem 0;
+}
+
+.features {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.features__title {
   font-size: 3.2rem;
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
