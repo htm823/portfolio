@@ -1,0 +1,12 @@
+.preview {
+	&__title {
+		font-family: var(--font-heading);
+		margin: 0 0 4rem 0;
+		font-size: 3.2rem;
+	}
+
+	&__video {
+		max-width: 104rem;
+		width: 100%;
+	}
+}
