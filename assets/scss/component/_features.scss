@@ -1,0 +1,9 @@
+.features {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	&__title {
+		font-size: 3.2rem;
+		font-family: var(--font-heading);
+		margin: 0 0 4rem 0;
+	}
+}

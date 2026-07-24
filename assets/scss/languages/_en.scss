@@ -43,3 +43,25 @@ body {
 		font-size: 2rem;
 	}
 }
+
+.features {
+	&__list {
+		> dt {
+			font-size: 2rem;
+
+			> .fa-square-check {
+				color: var(--color-primary-dark);
+				margin: 0 .4rem 0 0;
+			}
+		}
+
+		> dd {
+			margin: 0 0 2.4rem 3rem;
+			color: var(--color-text-light);
+
+			&:last-child {
+				margin: 0 0 0 3rem;
+			}
+		}
+	}
+}
