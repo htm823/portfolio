@@ -612,6 +612,35 @@ body {
   margin: 0 0 4rem 0;
 }
 
+.tech-stack {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tech-stack__title {
+  font-size: 3.2rem;
+  font-family: var(--font-heading);
+  margin: 0 0 4rem 0;
+}
+.tech-stack__category {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.tech-stack__category .fa-code,
+.tech-stack__category .fa-database,
+.tech-stack__category .fa-book-open,
+.tech-stack__category .fa-headphones,
+.tech-stack__category .fa-rocket {
+  margin: 0 0.8rem 0 0;
+  color: var(--color-primary-dark);
+}
+.tech-stack__tool {
+  color: var(--color-text-light);
+  margin: 0 0 2.4rem 3.4rem;
+  font-size: var(--font-size-base);
+}
+.tech-stack__tool:last-child {
+  margin: 0 0 0 3.4rem;
+}
+
 .footer {
   background-color: #000;
   color: var(--color-lightest);
