@@ -48,6 +48,7 @@ body {
 	&__list {
 		> dt {
 			font-size: var(--font-size-base);
+			font-weight: bold;
 
 			> .fa-square-check {
 				color: var(--color-primary-dark);
@@ -57,11 +58,11 @@ body {
 
 		> dd {
 			font-size: var(--font-size-sm);
-			margin: 0 0 2.4rem 2.7rem;
+			margin: .4rem 0 2.4rem 2.7rem;
 			color: var(--color-text-light);
 
 			&:last-child {
-				margin: 0 0 0 2.7rem;
+				margin: .4rem 0 0 2.7rem;
 			}
 		}
 	}

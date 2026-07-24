@@ -1,0 +1,22 @@
+.system-design {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	&__title {
+		font-size: 3.2rem;
+		font-family: var(--font-heading);
+		margin: 0 0 4rem 0;
+	}
+
+	&__category {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__description {
+		margin: .8rem 0 0 0;
+
+		&:nth-child(2) {
+			margin: .8rem 0 2.4rem 0;
+		}
+	}
+}
