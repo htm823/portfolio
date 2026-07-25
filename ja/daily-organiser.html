@@ -72,7 +72,7 @@
 					<h1 class="project__title">Daily Organiser</h1>
 					<p class="project__tagline">
 						シンプルなタスク管理アプリ。<br>
-						仕事とプライベートのタスクを分けて管理可能。<br>
+						仕事とプライベートのタスクを分けて管理可能。<br><br>
 						HTML、CSS、JavaScriptを用いて開発。
 					</p>
 					<ul class="project__links">
@@ -149,7 +149,8 @@
 			<div class="technology-choices__inner container">
 				<h2 class="technology-choices__title">Technology Choices</h2>
 				<p class="technology-choices__description">
-					JavaScriptの基本的なCRUD操作やローカルストレージ、フィルタリング機能の実装に重点を置きたかったため、HTML・CSS・JavaScriptによる構成を採用しました。フレームワークを使用せずに実装することで、データ操作やDOM操作の仕組みを理解しながら開発を進めることを目的としました。
+					JavaScriptのCRUD操作やローカルストレージ、フィルタリング機能の実装を目的に制作を進めました。<br>
+					フレームワークは使用せず、JavaScriptの基礎理解に重点を置きました。
 				</p>
 			</div>
 		</section>
@@ -157,81 +158,40 @@
 			<div class="system-design__inner container">
 				<h2 class="system-design__title">System Design</h2>
 				<p class="system-design__description">
-					仕事とプライベートのタスクを素早く切り替えられるよう、All・Work・Personalの3つのタブを設けました。
-					現在選択しているカテゴリが一目で分かるよう、アクティブなタブにはアクセントカラーを適用しています。
-					また、各タスクにはカテゴリラベルを表示し、一覧表示でもどのカテゴリに属するタスクなのかを視覚的に判別しやすいデザインにしました。
+					仕事とプライベートのタスクを素早く切り替えられるよう、All・Work・Personalの3つのタブを設けました。<br>
+					現在選択しているカテゴリが一目で分かるよう、アクティブなタブにはアクセントカラーを適用しています。<br><br>
+					各タスクにはカテゴリラベルを表示し、個々のタスクがどのカテゴリに属するのか視覚的に判断しやすくしました。
 				</p>
 			</div>
 		</section>
 		<section id="daily-organiser-implement-highlights" class="implement-highlights section">
 			<div class="implement-highlights__inner container">
-				<figure class="implement-highlights__figure">
-					<img src="" class="implement-highlights__img" alt="">
-				</figure>
 				<h2 class="implement-highlights__title">Implementation Highlights</h2>
 				<p class="implement-highlights__description">
-					<span class="first-block">データと画面表示の責務を分離することを意識して実装しました。</span>
-					<span class="following-block">タスクは<span class="code">tasks</span>配列で一元管理し、このデータを基準に追加・編集・削除・完了状態の更新を行っています。画面表示は常にこの配列から生成することで、データとUIの整合性を保ちやすい構成にしました。</span>
-					<span class="following-block">また、入力時には前後の不要な空白を自動的に除去しました。</span>
-					<span class="following-block">マウス操作だけでなく、Enterキーによる保存やEscapeキーによるキャンセルにも対応することで、キーボード中心でも快適に操作できるよう工夫しました。</span>
-				</p>
+					データと画面表示の責務を分離することを意識して実装しました。<br><br>
+					タスクはtasks配列で一元管理し、このデータを基準に追加・編集・削除・完了状態の更新を行っています。<br>画面表示は常にこの配列から生成することで、データとUIの整合性を保ちやすい構成にしました。<br><br>
+					また、入力時には前後の不要な空白が除去されるようにしました。<br><br>
+					マウス操作だけでなく、Enterキーによる保存やEscapeキーによるキャンセルにも対応することで、キーボード中心でも快適に操作できるよう工夫しました。
 			</div>
 		</section>
 		<section id="daily-organiser-challenges-and-solution" class="challenges-and-solution section">
 			<div class="challenges-and-solution__inner container">
-				<figure class="challenges-and-solution__figure">
-					<img src="" class="challenges-and-solution__img" alt="">
-				</figure>
 				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
 				<p class="challenges-and-solution__description">
-					開発当初は、各タスクの状態管理や一意なIDの付与方法に苦労しました。
-					解決策として、各タスクをオブジェクトとして管理し、ID・タスク内容・カテゴリ・完了状態を保持する構成を採用しました。
-					これにより、編集・削除・完了状態の切り替えを対象のタスクごとに管理できるようになり、今後機能を追加する際にも拡張しやすいデータ構造になりました。
+					開発当初は、各タスクの状態管理や一意なIDの付与実装に苦労しました。<br>
+					解決策として、各タスクをオブジェクトとして管理し、ID・タスク内容・カテゴリ・完了状態を保持できるよう工夫しました。
+					状態管理や今後の機能拡張を考慮したコード記述を心がけました。
 				</p>
-			</div>
-		</section>
-		<section id="daily-organiser-performance-and-quality" class="performance-and-quality section">
-			<div class="performance-and-quality__inner container">
-				<h2 class="performance-and-quality__title">Performance & Quality</h2>
-				<table class="score">
-					<caption class="score__caption">Google Lighthouse Score</caption>
-					<thead>
-						<tr>
-							<th class="score__title">Metric</th>
-							<th class="score__title">Score</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th class="score__metric">Performance</th>
-							<td class="score__detail">97</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Accessibility</th>
-							<td class="score__detail">75</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Best Practices</th>
-							<td class="score__detail">100</td>
-						</tr>
-						<tr>
-							<th class="score__metric">SEO</th>
-							<td class="score__detail">100</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 		</section>
 		<section id="daily-organiser-future-improvements" class="future-improvements section">
 			<div class="future-improvements__inner container">
-				<figure class="future-improvements__figure">
-					<img src="" class="future-improvements__img" alt="">
-				</figure>
 				<h2 class="future-improvements__title">Future Improvements</h2>
 				<p class="future-improvements__description">
-					今後は、アクセシビリティの改善に取り組む予定です。
-					フォーム要素やボタンに<span class="code">aria-label</span>などの適切な属性を追加し、スクリーンリーダー利用者にも配慮した実装へ改善したいと考えています。
-					また、一部の配色ではコントラスト比が十分ではないため、色設計を見直し、より視認性の高いUIへ改善する予定です。
+					今後は、アクセシビリティの改善に取り組む予定です。<br>
+					フォーム要素やボタンにaria-labelなどの適切な属性を追加し、スクリーンリーダー利用者への配慮を強化します。<br><br>
+					また、一部の配色においては、コントラスト比が不十分な状態です。<br>
+					使用カラーを見直し、より視認性の高いUIへ改善したいと考えています。
 				</p>
 			</div>
 		</section>

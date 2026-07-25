@@ -71,9 +71,9 @@
 				<div class="project__description">
 					<h1 class="project__title">Contact Form & Dashboard</h1>
 					<p class="project__tagline">
-						A contact management system built with PHP and MySQL.<br>
-						Users can submit enquiries through a contact form, while administrators can view and search submitted enquiries from the administration panel.<br>
-						Built with PHP, MySQL, HTML, Bootstrap, jQuery, and JavaScript.
+						A contact management system built with PHP and MySQL.<br><br>
+						Users can submit enquiries through a contact form, while administrators can view and search submitted enquiries from the administration panel.<br><br>
+						Built with PHP, MySQL, HTML, Bootstrap and jQuery.
 					</p>
 					<ul class="project__links">
 						<li>
@@ -144,7 +144,7 @@
 					<dd class="tech-stack__tool">
 						<ul class="tech-stack__languages">
 							<li class="tech-stack__language">Bootstrap</li>
-							<li class="tech-stack__language"><a href="https://github.com/yubinbango/yubinbango"  class="text-link" target="_blank" rel="noreferrer noopener">yubinbango.js</a></li>
+							<li class="tech-stack__language"><a href="https://github.com/yubinbango/yubinbango" class="text-link" target="_blank" rel="noreferrer noopener">yubinbango.js</a></li>
 						</ul>
 					</dd>
 				</dl>
@@ -168,24 +168,18 @@
 		</section>
 		<section id="contact-form-implement-highlights" class="implement-highlights section">
 			<div class="implement-highlights__inner container">
-				<figure class="implement-highlights__figure">
-					<img src="" class="implement-highlights__img" alt="">
-				</figure>
 				<h2 class="implement-highlights__title">Implementation Highlights</h2>
 				<p class="implement-highlights__description">
-					<span class="first-block">
-						Database connection logic was centralised to avoid duplication across the application. Configuration values were separated into environment variables, allowing database credentials to be changed without modifying application logic. Session management is used throughout the application to preserve user input during multi-step form submission and to manage administrator authentication. User input and database values are escaped before rendering HTML to ensure safe output.
-					</span>
-					<span class="following-block">For local development, Mailtrap was used to test email functionality without sending emails to real recipients. A demo account is also provided for accessing the administration pages. See the <a href="https://github.com/htm823/contact-form" class="text-link" target="_blank" rel="noreferrer noopener">README</a> for setup instructions and demo account details.
-					</span>
+					Database connection logic was centralised to avoid duplication across the application. Configuration values were separated into environment variables, allowing database credentials to be changed without modifying application logic. <br><br>
+					Session management is used throughout the application to preserve user input during multi-step form submission and to manage administrator authentication.<br><br>
+					User input and database values are escaped before rendering HTML to ensure safe output.<br><br>
+					For local development, <a href="https://mailtrap.io/" class="text-link" target="_blank" rel="noreferrer noopener">Mailtrap</a> was used to test email functionality without sending emails to real recipients. A demo account is also provided for accessing the administration pages. <br><br>
+					See the <a href="https://github.com/htm823/contact-form" class="text-link" target="_blank" rel="noreferrer noopener">README</a> for setup instructions and demo account details.
 				</p>
 			</div>
 		</section>
 		<section id="contact-form-challenges-and-solution" class="challenges-and-solution section">
 			<div class="challenges-and-solution__inner container">
-				<figure class="challenges-and-solution__figure">
-					<img src="" class="challenges-and-solution__img" alt="">
-				</figure>
 				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
 				<p class="challenges-and-solution__description">
 					One challenge was preserving form data when validation failed or when users navigated back to a previous page. To solve this, session data is used to maintain the enquiry throughout the submission process until it is completed. The same session-based approach is used for administrator authentication, maintaining the login state until the user signs out.
@@ -196,23 +190,19 @@
 			<div class="security__inner container">
 				<h2 class="security__title">Security</h2>
 				<p class="security__description">
-					Security was considered throughout the implementation. Passwords are securely hashed using <span class="code">password_hash()</span>, and user authentication is performed with <span class="code">password_verify()</span>. To protect against SQL injection, all database queries use prepared statements. User input is also escaped before being rendered in HTML to mitigate XSS attacks. In addition, the administration pages are protected by session-based authentication, ensuring that only authenticated users can access administrative features.
+					Security was considered throughout the implementation. Passwords are securely hashed using password_hash(), and user authentication is performed with password_verify(). <br><br>
+					To protect against SQL injection, all database queries use prepared statements. <br><br>
+					User input is also escaped before being rendered in HTML to mitigate XSS attacks. <br><br>
+					In addition, the administration pages are protected by session-based authentication, ensuring that only authenticated users can access administrative features.
 				</p>
 			</div>
 		</section>
 		<section id="contact-form-future-improvements" class="future-improvements section">
 			<div class="future-improvements__inner container">
-				<figure class="future-improvements__figure">
-					<img src="" class="future-improvements__img" alt="">
-				</figure>
 				<h2 class="future-improvements__title">Future Improvements</h2>
 				<p class="future-improvements__description">
-					<span class="first-block">
-						In future iterations, I plan to add user registration, introduce automated testing with PHPUnit, further normalise the database design, and make the administration pages fully responsive.
-					</span>
-					<span class="following-block">
-						I would also like to define a clearer target audience and real-world use case, review the application's specifications accordingly, and deploy it to a production environment.
-					</span>
+					In future iterations, I plan to add user registration, introduce automated testing with PHPUnit, further normalise the database design, and make the administration pages fully responsive.
+					I would also like to define a clearer target audience and real-world use case, review the application's specifications accordingly, and deploy it to a production environment.
 				</p>
 			</div>
 		</section>

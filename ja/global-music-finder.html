@@ -72,8 +72,8 @@
 					<h1 class="project__title">Global Music Finder</h1>
 					<p class="project__tagline">
 						海外の音楽を検索しやすくする音楽検索アプリ。<br>
-						言語別の楽曲検索、楽曲・アーティスト名のコピー、楽曲の試聴が可能。<br>
-						HTML、CSS (SCSS)、JavaScript、iTunes APIを用いて開発。<br>
+						言語別の楽曲検索、楽曲・アーティスト名のコピー、楽曲の試聴が可能。<br><br>
+						HTML、SCSS、JavaScript、iTunes APIを用いて開発。<br>
 					</p>
 					<ul class="project__links">
 						<li>
@@ -132,7 +132,7 @@
 					<dd class="tech-stack__tool">
 						<ul class="tech-stack__languages">
 							<li class="tech-stack__language">HTML</li>
-							<li class="tech-stack__language">CSS / SCSS</li>
+							<li class="tech-stack__language">SCSS</li>
 							<li class="tech-stack__language">JavaScript</li>
 						</ul>
 					</dd>
@@ -147,13 +147,9 @@
 			<div class="technology-choices__inner container">
 				<h2 class="technology-choices__title">Technology Choices</h2>
 				<p class="technology-choices__description">
-					<span class="first-block">
-						JavaScriptによるAPI連携の実装に重点を置きたかったため、<br>
-						HTML・SCSS・JavaScriptを採用しました。
-					</span>
-					<span class="following-block">
+						JavaScriptによるAPI連携の実装に重点を置きたかったため、HTML・SCSS・JavaScriptを採用しました。<br><br>
 						APIには、無料かつ認証不要で利用できるiTunes Search APIを選択しました。<br>
-						また、多言語の楽曲を幅広く検索できることも選定理由の一つです。
+						多言語の楽曲を幅広く検索できるという点においても、今回のアプリに向いていると考えました。
 					</span>
 				</p>
 			</div>
@@ -165,108 +161,51 @@
 					<dt class="system-design__category">Final Design</dt>
 					<dd class="system-design__description">
 						検索結果をスクロールしても言語選択タブが見えるようにするため、操作パネルを左端に固定しました。<br>
-						また、言語ごとにUIのアクセントカラーを統一することで、<br>
-						今開いているタブをユーザーが視覚的に把握できるデザインを目指しました。
+						言語ごとにUIのアクセントカラーを統一することで、今開いているタブをユーザーが視覚的に把握できるようにしました。
 					</dd>
 					<dt class="system-design__category">Initial Design</dt>
 					<dd class="system-design__description">
-						当初、言語タブを画面上部に配置していましたが、検索結果をスクロールすると、<br>
-						操作パネルが画面外に出てしまうという問題が発生したため、デザインを見直しました。
+						当初、言語タブを画面上部に配置していましたが、スクロールすると操作パネルが画面外に出てしまう問題が発生しました。<br>
+						そのため、デザインの見直しを行い、操作パネルを左端に固定配置しようと考えました。
 					</dd>
 				</dl>
 			</div>
 		</section>
 		<section id="gmf-implement-highlights" class="implement-highlights section">
 			<div class="implement-highlights__inner container">
-				<figure class="implement-highlights__figure">
-					<img src="" class="implement-highlights__img" alt="">
-				</figure>
 				<h2 class="implement-highlights__title">Implementation Highlights</h2>
 				<p class="implement-highlights__description">
-					<span class="first-block">
-						JavaScriptは機能単位でファイルや関数を分割し、
-						保守性と拡張性を意識した構成にしました。
-						ページごとに必要なコードのみ読み込む構成にすることで、不要な処理を避けられるよう工夫しました。
-					</span>
-					<span class="following-block">
-						検索結果の生成にはテンプレートリテラルを採用しました。
-						<span class="code">createElement()</span>で要素を一つずつ組み立てるのではなく、HTML構造をまとめて記述できるため、複雑なDOM構造でも可読性と保守性を維持できると考えました。
-					</span>
-					<span class="following-block">
-						CSS設計においては、BEM形式を採用しました。
-						セクションや各パーツなど、ブロックごとにスタイルを管理しやすく、
-						SCSSの記法と相性が良いためです。
-					</span>
-					<span class="following-block">
-						また、言語ごとの可変スタイルは、別ファイルにカラーパレットをあらかじめ作成しました。
-						SCSS変数とラジオボタンで制御することで、追加するコードを必要最低限に留めるよう意識しました。
-					</span>
+					JavaScriptは機能単位でファイルや関数を分割し、保守性と拡張性を意識した構成にしました。<br>
+					ページごとに必要なコードのみ読み込む構成にすることで、不要な処理を避けられるよう工夫しました。<br><br>
+					検索結果の生成にはテンプレートリテラルを採用しました。<br>
+					HTML構造をまとめて記述できるため、createElement()を使うよりも可読性と保守性が上がると考えました。<br><br>
+					CSS設計においては、BEM形式を採用しました。<br>
+					セクションや各パーツなど、ブロックごとにスタイルを管理しやすく、SCSSの記法と相性が良いためです。<br><br>
+					言語ごとの可変スタイルは、別ファイルにカラーパレットをあらかじめ作成しました。<br>
+					SCSS変数とラジオボタンで制御することで、追加するコードを必要最低限に留めるよう意識しました。
 				</p>
 			</div>
 		</section>
 		<section id="gmf-challenges-and-solution" class="challenges-and-solution section">
 			<div class="challenges-and-solution__inner container">
-				<figure class="challenges-and-solution__figure">
-					<img src="" class="challenges-and-solution__img" alt="">
-				</figure>
 				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
 				<p class="challenges-and-solution__description">
-					<span class="first-block">
-						試聴ボタンの実装と状態管理に苦労しました。
-						当初は各検索結果にaudioタグを配置しましたが、
-						検索結果が多い場合にaudio要素が増えすぎるという問題が発生しました。
-						その後、別の実装方法も試しましたが、
-						音源を正常に再生できませんでした。
-						最終的に、音源の再生を優先してaudioタグによる実装を採用しています。
-					</span>
-					<span class="following-block">
-						一方で、再生状態に応じたアイコンの切り替えは未実装のため、
-						今後改善したい課題として残しています。
-					</span>
+						試聴ボタンの実装と状態管理に苦労しました。<br>
+						当初は各検索結果にaudioタグを配置しましたが、検索結果が多い場合にaudio要素が増えすぎる問題が発生しました。<br><br>
+						その後、別の実装方法も試しましたが、音源を正常に再生できませんでした。<br>
+						最終的に、音源の再生を優先してaudioタグによる実装を採用しています。<br><br>
+						再生状態に応じたアイコンの切り替えは未実装のため、今後改善したい課題として残しています。
 				</p>
-			</div>
-		</section>
-		<section id="gmf-performance-and-quality" class="performance-and-quality section">
-			<div class="performance-and-quality__inner container">
-				<h2 class="performance-and-quality__title">Performance & Quality</h2>
-				<table class="score">
-					<caption class="score__caption">Google Lighthouse Score</caption>
-					<thead>
-						<tr>
-							<th class="score__title">Metric</th>
-							<th class="score__title">Score</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th class="score__metric">Performance</th>
-							<td class="score__detail">95</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Accessibility</th>
-							<td class="score__detail">92</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Best Practices</th>
-							<td class="score__detail">100</td>
-						</tr>
-						<tr>
-							<th class="score__metric">SEO</th>
-							<td class="score__detail">100</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 		</section>
 		<section id="gmf-future-improvements" class="future-improvements section">
 			<div class="future-improvements__inner container">
-				<figure class="future-improvements__figure">
-					<img src="" class="future-improvements__img" alt="">
-				</figure>
 				<h2 class="future-improvements__title">Future Improvements</h2>
 				<p class="future-improvements__description">
-					<span class="fitst-block">One planned improvement is to synchronise the preview button with the playback state so that users can immediately see whether a track is playing or paused.</span>
-					<span class="following-block">Another improvement would be to keep the search bar fixed at the top of the page. At present, it scrolls out of view with the search results, making repeated searches less convenient.</span>
+					今後は、再生状態に応じて試聴ボタンのアイコンを切り替えられるよう改善したいと考えています。<br>
+					現在は音源が再生されてもアイコンが変化しないため、再生中か停止中かを視覚的に判断しづらい状態です。<br><br>
+					検索結果をスクロールしても検索ボックスを利用できるよう、画面上部に固定表示する予定です。<br>
+					検索のたびにページ上部へ戻る必要がなくなり、操作性の向上につながると考えています。
 				</p>
 			</div>
 		</section>

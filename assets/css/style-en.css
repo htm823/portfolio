@@ -405,8 +405,7 @@ body {
 }
 @media (max-width: 1102px) {
   .card {
-    width: calc(50% - 4rem);
-    max-width: 49.95rem;
+    max-width: calc(50% - 4rem);
   }
 }
 @media (max-width: 768px) {
@@ -459,7 +458,7 @@ body {
   width: 32rem;
   margin: 0 0 1.6rem;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1102px) {
   .card__figure {
     width: 100%;
   }
@@ -589,7 +588,7 @@ body {
 .preview__title {
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 .preview__video {
   max-width: 104rem;
@@ -600,7 +599,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .background__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
 }
@@ -609,7 +608,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .features__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
 }
@@ -618,7 +617,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .tech-stack__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
 }
@@ -656,7 +655,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .technology-choices__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
 }
@@ -665,7 +664,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .system-design__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
 }
@@ -681,7 +680,43 @@ body {
 }
 
 .explore__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+  margin: 0 0 4rem 0;
+}
+
+.implement-highlights {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.implement-highlights__title {
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+  margin: 0 0 4rem 0;
+}
+
+.challenges-and-solution {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.challenges-and-solution__title {
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+  margin: 0 0 4rem 0;
+}
+
+.future-improvements {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.future-improvements__title {
+  font-size: 2.8rem;
+  font-family: var(--font-heading);
+  margin: 0 0 4rem 0;
+}
+
+.security {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.security__title {
+  font-size: 2.8rem;
   font-family: var(--font-heading);
   margin: 0 0 4rem 0;
 }

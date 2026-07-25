@@ -72,7 +72,7 @@
 					<h1 class="project__title">Global Music Finder</h1>
 					<p class="project__tagline">
 						A web application that makes it easier to discover music from around the world.
-						Search for songs by language, copy song and artist names, and preview tracks.<br>
+						Search for songs by language, copy song and artist names, and preview tracks.<br><br>
 						Built with HTML, SCSS, JavaScript, and the iTunes Search API.
 					</p>
 					<ul class="project__links">
@@ -130,7 +130,7 @@
 					<dd class="tech-stack__tool">
 						<ul class="tech-stack__languages">
 							<li class="tech-stack__language">HTML</li>
-							<li class="tech-stack__language">CSS / SCSS</li>
+							<li class="tech-stack__language">SCSS</li>
 							<li class="tech-stack__language">JavaScript</li>
 						</ul>
 					</dd>
@@ -163,26 +163,16 @@
 		</section>
 		<section id="gmf-implement-highlights" class="implement-highlights section">
 			<div class="implement-highlights__inner container">
-				<figure class="implement-highlights__figure">
-					<img src="" class="implement-highlights__img" alt="">
-				</figure>
 				<h2 class="implement-highlights__title">Implementation Highlights</h2>
 				<p class="implement-highlights__description">
-					<span class="first-block">To improve maintainability, I organised JavaScript functions and files by feature rather than placing everything in a single script. This structure makes it easier to understand each file's responsibility and allows only the code required for each page to be loaded as the application grows. Rather than creating each DOM element individually with <span class="code">createElement()</span>, I used template literals to generate the search result markup. This approach kept the HTML structure easier to read and maintain.</span>
-					<span class="following-block">
-						For styling, I adopted the BEM methodology because it provides a clear component structure and works well with SCSS.
-					</span>
-					<span class="following-block">
-						To support language-specific themes efficiently, I defined colour palettes in separate SCSS files and switched styles using SCSS variables and radio button states, keeping duplicated code to a minimum.
-					</span>
+					o improve maintainability, I organised JavaScript functions and files by feature rather than placing everything in a single script. This structure makes it easier to understand each file's responsibility and allows only the code required for each page to be loaded as the application grows. Rather than creating each DOM element individually with <span class="code">createElement()</span>, I used template literals to generate the search result markup. This approach kept the HTML structure easier to read and maintain.
+					For styling, I adopted the BEM methodology because it provides a clear component structure and works well with SCSS.
+					To support language-specific themes efficiently, I defined colour palettes in separate SCSS files and switched styles using SCSS variables and radio button states, keeping duplicated code to a minimum.
 				</p>
 			</div>
 		</section>
 		<section id="gmf-challenges-and-solution" class="challenges-and-solution section">
 			<div class="challenges-and-solution__inner container">
-				<figure class="challenges-and-solution__figure">
-					<img src="" class="challenges-and-solution__img" alt="">
-				</figure>
 				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
 				<p class="challenges-and-solution__description">
 					<span class="first-block">
@@ -194,43 +184,8 @@
 				</p>
 			</div>
 		</section>
-		<section id="gmf-performance-and-quality" class="performance-and-quality section">
-			<div class="performance-and-quality__inner container">
-				<h2 class="performance-and-quality__title">Performance & Quality</h2>
-				<table class="score">
-					<caption class="score__caption">Google Lighthouse Score</caption>
-					<thead>
-						<tr>
-							<th class="score__title">Metric</th>
-							<th class="score__title">Score</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th class="score__metric">Performance</th>
-							<td class="score__detail">95</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Accessibility</th>
-							<td class="score__detail">92</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Best Practices</th>
-							<td class="score__detail">100</td>
-						</tr>
-						<tr>
-							<th class="score__metric">SEO</th>
-							<td class="score__detail">100</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</section>
 		<section id="gmf-future-improvements" class="future-improvements section">
 			<div class="future-improvements__inner container">
-				<figure class="future-improvements__figure">
-					<img src="" class="future-improvements__img" alt="">
-				</figure>
 				<h2 class="future-improvements__title">Future Improvements</h2>
 				<p class="future-improvements__description">
 					<span class="fitst-block">One planned improvement is to synchronise the preview button with the playback state so that users can immediately see whether a track is playing or paused.</span>

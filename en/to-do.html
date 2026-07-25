@@ -155,64 +155,27 @@
 		</section>
 		<section id="todo-list-implement-highlights" class="implement-highlights section">
 			<div class="implement-highlights__inner container">
-				<figure class="implement-highlights__figure">
-					<img src="" class="implement-highlights__img" alt="">
-				</figure>
 				<h2 class="implement-highlights__title">Implementation Highlights</h2>
-				<p class="implement-highlights__description">The application manages task creation, deletion, and completion by treating the <span class="code">tasks</span> array as the single source of truth. After updating the data, the UI is re-rendered to keep the displayed content consistent with the application's state. Task creation is handled through the form's <span class="code">submit</span> event, allowing users to add tasks either by clicking the submit button or by pressing the Enter key.</p>
+				<p class="implement-highlights__description">The application manages task creation, deletion, and completion by treating the tasks array as the single source of truth. After updating the data, the UI is re-rendered to keep the displayed content consistent with the application's state.<br><br>
+				Task creation is handled through the form's submit event, allowing users to add tasks either by clicking the submit button or by pressing the Enter key.</p>
 			</div>
 		</section>
 		<section id="todo-list-challenges-and-solution" class="challenges-and-solution section">
 			<div class="challenges-and-solution__inner container">
-				<figure class="challenges-and-solution__figure">
-					<img src="" class="challenges-and-solution__img" alt="">
-				</figure>
 				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
 				<p class="challenges-and-solution__description">
-					Initially, task creation was implemented using a button <span class="code">click</span> event. However, I recognised that users might also expect to add tasks using the keyboard, so I refactored the implementation to use the form's <span class="code">submit</span> event instead. To support both interaction methods, I placed the button inside the <span class="code">form</span> element and set its type to <span class="code">submit</span>. This allows the same logic to be executed whether the user clicks the button or presses the Enter key. Through this process, I gained a better understanding of how form events work and how centralising shared logic can make an implementation cleaner and easier to maintain.
+					Initially, task creation was implemented using a button clickevent. However, I recognised that users might also expect to add tasks using the keyboard, so I refactored the implementation to use the form's submit event instead.<br><br>
+					To support both interaction methods, I placed the button inside the form element and set its type to submit. This allows the same logic to be executed whether the user clicks the button or presses the Enter key.<br><br>
+					Through this process, I gained a better understanding of how form events work and how centralising shared logic can make an implementation cleaner and easier to maintain.
 				</p>
-			</div>
-		</section>
-		<section id="todo-list-performance-and-quality" class="performance-and-quality section">
-			<div class="performance-and-quality__inner container">
-				<h2 class="performance-and-quality__title">Performance & Quality</h2>
-				<table class="score">
-					<caption class="score__caption">Google Lighthouse Score</caption>
-					<thead>
-						<tr>
-							<th class="score__title">Metric</th>
-							<th class="score__title">Score</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th class="score__metric">Performance</th>
-							<td class="score__detail">99</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Accessibility</th>
-							<td class="score__detail">91</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Best Practices</th>
-							<td class="score__detail">100</td>
-						</tr>
-						<tr>
-							<th class="score__metric">SEO</th>
-							<td class="score__detail">100</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 		</section>
 		<section id="todo-list-future-improvements" class="future-improvements section">
 			<div class="future-improvements__inner container">
-				<figure class="future-improvements__figure">
-					<img src="" class="future-improvements__img" alt="">
-				</figure>
 				<h2 class="future-improvements__title">Future Improvements</h2>
 				<p class="future-improvements__description">
-					In future iterations, I plan to improve the application's accessibility by reviewing and refactoring UI elements, including buttons and other interactive components. I would also like to define a clearer target audience and real-world use case, then expand the application with features that better meet users' needs and make it more practical.
+					In future iterations, I plan to improve the application's accessibility by reviewing and refactoring UI elements, including buttons and other interactive components.<br><br>
+					I would also like to define a clearer target audience and real-world use case, then expand the application with features that better meet users' needs and make it more practical.
 				</p>
 			</div>
 		</section>
