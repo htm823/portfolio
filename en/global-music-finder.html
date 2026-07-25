@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en_GB">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- OGP (SNS Share) -->
+	<meta property="og:title" content="Global Music Finder | Hatsumi Shimizu">
+	<meta property="og:description" content="Details of Global Music Finder, a project by Hatsumi Shimizu. Exploring the process of turning complexity into structure in web development.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hatsumi-shimizu.vercel.app/en/global-music-finder.html">
+	<meta property="og:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-gmf.png">
+	<meta property="og:site_name" content="Portfolio Website of Hatsumi Shimizu">
+	<meta property="og:locale" content="en_GB">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Global Music Finder | Hatsumi Shimizu">
+	<meta name="twitter:description" content="Details of Global Music Finder, a project by Hatsumi Shimizu. Exploring the process of turning complexity into structure in web development.">
+	<meta name="twitter:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-gmf.png">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style-en.css">
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+	<title>Global Music Finder | Hatsumi Shimizu</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner container">
+			<h1 class="header__title">Hatsumi</h1>
+			<button id="hamburger-menu" class="btn-menu" aria-expanded="false">
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+			</button>
+			<div id="hamburger-items" class="header__menu">
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="index.html" class="navigation__link--dark">Home</a>
+						</li>
+						<!-- Coming soon -->
+						<!-- <li class="navigation__item">
+							<a href="#" class="navigation__link--dark">About</a>
+						</li> -->
+						<li class="navigation__item">
+							<a href="projects.html" class="navigation__link--dark active">Projects</a>
+						</li>
+						<li class="navigation__item">
+							<a href="contact.html" class="navigation__link--dark">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="language">
+					<li class="language__item">
+						<a href="global-music-finder.html" class="language__link--active">EN</a>
+					</li>
+					<li class="language__item">
+						<a href="/ja/global-music-finder.html" class="language__link">JA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="global-music-finder" class="project section">
+			<div class="project__inner container">
+				<div class="project__description">
+					<h1 class="project__title">Global Music Finder</h1>
+					<p class="project__tagline">
+						A web application that makes it easier to discover music from around the world.
+						Search for songs by language, copy song and artist names, and preview tracks.<br><br>
+						Built with HTML, SCSS, JavaScript, and the iTunes Search API.
+					</p>
+					<ul class="project__links">
+						<li>
+							<a href="https://global-music-finder.vercel.app/" class="project__btn btn btn-primary" target="_blank" rel="noreferrer noopener">Visit Global Music Finder</a>
+						</li>
+						<li>
+							<a href="https://github.com/htm823/global_music_finder" class="project__btn btn btn-github" target="_blank" rel="noreferrer noopener">View GitHub Repository</a>
+						</li>
+					</ul>
+				</div>
+				<figure class="project__figure">
+					<img src="../assets/img/headphone.png" class="project__img" alt="Illustration of headphones with a list">
+				</figure>
+			</div>
+		</section>
+		<section id="gmf-preview" class="preview section">
+			<div class="preview__inner container">
+				<h2 class="preview__title">Preview</h2>
+				<div class="preview__figure">
+					<video src="../assets/movie/gmf.mov" autoplay muted loop class="preview__video"></video>
+				</div>
+			</div>
+		</section>
+		<section id="gmf-background" class="background section">
+			<div class="background__inner container">
+				<h2 class="background__title">Background</h2>
+				<p class="background__description">
+					I often wanted to listen to Korean and Chinese music, but without knowing the languages, it was difficult to type search queries accurately.
+					To solve this problem, I created an application that allows users to discover music in unfamiliar languages more easily.
+				</p>
+			</div>
+		</section>
+		<section id="gmf-features" class="features section">
+			<div class="features__inner container">
+				<h2 class="features__title">Features</h2>
+				<dl class="features__list">
+					<dt><i class="fa-regular fa-square-check"></i>Search by Language</dt>
+					<dd>Browse dedicated pages for each language, making it immediately clear which language you are currently searching in.</dd>
+					<dt><i class="fa-regular fa-square-check"></i>Copy Song & Artist Names</dt>
+					<dd>
+						Copy song titles or artist names with a single click, making it easy to search again without manually typing unfamiliar characters.
+						This is useful not only within the application but also when searching on external websites.
+					</dd>
+					<dt><i class="fa-regular fa-square-check"></i>Song Preview</dt>
+					<dd>Listen to track previews instantly, allowing users to discover new music without searching for audio separately.</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="gmf-tech-stack" class="tech-stack section">
+			<div class="tech-stack__inner container">
+				<h2 class="tech-stack__title">Tech Stack</h2>
+				<dl class="tech-stack__list">
+					<dt class="tech-stack__category"><i class="fa-solid fa-code"></i>Frontend</dt>
+					<dd class="tech-stack__tool">
+						<ul class="tech-stack__languages">
+							<li class="tech-stack__language">HTML</li>
+							<li class="tech-stack__language">SCSS</li>
+							<li class="tech-stack__language">JavaScript</li>
+						</ul>
+					</dd>
+					<dt class="tech-stack__category"><i class="fa-regular fa-headphones"></i>API</dt>
+					<dd class="tech-stack__tool">iTunes Search API</dd>
+					<dt class="tech-stack__category"><i class="fa-solid fa-rocket"></i>Deployment</dt>
+					<dd class="tech-stack__tool">Vercel</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="gmf-technology-choices" class="technology-choices section">
+			<div class="technology-choices__inner container">
+				<h2 class="technology-choices__title">Technology Choices</h2>
+				<p class="technology-choices__description">
+					I chose vanilla JavaScript because I wanted to focus on integrating with an external API rather than learning a new framework at the same time.
+					The iTunes Search API was selected because it is free to use, requires no authentication, and provides access to a large international music catalogue, making it well suited for a multilingual music search application.
+				</p>
+			</div>
+		</section>
+		<section id="gmf-system-design" class="system-design section">
+			<div class="system-design__inner container">
+				<h2 class="system-design__title">System Design</h2>
+				<dl class="system-design__list">
+					<dt class="system-design__category">Final Design</dt>
+					<dd class="system-design__description">The language navigation panel is fixed to the left side of the screen so that it remains visible while users scroll through search results. Each language is also assigned a consistent accent colour, allowing users to recognise the currently selected language at a glance.</dd>
+					<dt class="system-design__category">Initial Design</dt>
+					<dd class="system-design__description">Originally, the language tabs were placed at the top of the page. However, once users scrolled through the search results, the navigation disappeared from view, making it inconvenient to switch languages.</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="gmf-implement-highlights" class="implement-highlights section">
+			<div class="implement-highlights__inner container">
+				<h2 class="implement-highlights__title">Implementation Highlights</h2>
+				<p class="implement-highlights__description">
+					o improve maintainability, I organised JavaScript functions and files by feature rather than placing everything in a single script. This structure makes it easier to understand each file's responsibility and allows only the code required for each page to be loaded as the application grows. Rather than creating each DOM element individually with createElement(), I used template literals to generate the search result markup. This approach kept the HTML structure easier to read and maintain.
+					For styling, I adopted the BEM methodology because it provides a clear component structure and works well with SCSS.
+					To support language-specific themes efficiently, I defined colour palettes in separate SCSS files and switched styles using SCSS variables and radio button states, keeping duplicated code to a minimum.
+				</p>
+			</div>
+		</section>
+		<section id="gmf-challenges-and-solution" class="challenges-and-solution section">
+			<div class="challenges-and-solution__inner container">
+				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
+				<p class="challenges-and-solution__description">
+					<span class="first-block">
+						The most challenging part of the project was implementing the song preview feature. My initial approach used an individual &lt;audio&gt; element for every search result, but this caused performance issues when a large number of tracks were displayed. I then experimented with an alternative button-based implementation, which improved the interface but failed to play audio correctly.
+					</span>
+					<span class="following-block">
+						The current implementation successfully plays previews using the &lt;audio&gt; element. However, synchronising the play/pause icon with the playback state remains an unresolved issue that I plan to improve.
+					</span>
+				</p>
+			</div>
+		</section>
+		<section id="gmf-future-improvements" class="future-improvements section">
+			<div class="future-improvements__inner container">
+				<h2 class="future-improvements__title">Future Improvements</h2>
+				<p class="future-improvements__description">
+					<span class="fitst-block">One planned improvement is to synchronise the preview button with the playback state so that users can immediately see whether a track is playing or paused.</span>
+					<span class="following-block">Another improvement would be to keep the search bar fixed at the top of the page. At present, it scrolls out of view with the search results, making repeated searches less convenient.</span>
+				</p>
+			</div>
+		</section>
+		<section id="explore-more-projects" class="explore section--last">
+			<div class="explore__inner container">
+				<h2 class="explore__title">Explore More Projects</h2>
+				<ul class="cards">
+					<li class="card">
+						<a href="daily-organiser.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/daily-organiser.png" alt="Homepage of Daily Organiser">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Daily Organiser</dt>
+									<dd class="card__detail">Task management app</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card--hide">
+						<a href="contact-form.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/contact-form.png" alt="Homepage of Contact Form & Dashboard">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Contact Form & Dashboard</dt>
+									<dd class="card__detail">Contact Management App</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="to-do.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/to-do-list.png" alt="Homepage of To-do List">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">To-do List</dt>
+									<dd class="card__detail">Minimal to-do list app</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__inner container">
+			<small class="footer__copyright">&copy; 2026 Hatsumi Shimizu</small>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="index.html" class="navigation__link--light">Home</a>
+					</li>
+					<!-- Coming soon -->
+					<!-- <li class="navigation__item">
+						<a href="#" class="navigation__link--light">About</a>
+					</li> -->
+					<li class="navigation__item">
+						<a href="projects.html" class="navigation__link--light">Projects</a>
+					</li>
+					<li class="navigation__item">
+						<a href="contact.html" class="navigation__link--light">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="../assets/js/hamburger-menu.js"></script>
+</body>
+
+</html>

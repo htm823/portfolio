@@ -5,18 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="description" content="I am exploring web development and writing to create clear, organised information structures.">
-
-	<meta property="og:title" content="Web Development & Writing">
-	<meta property="og:description" content="I am exploring web development and writing to create clear, organised information structures.">
-
-	<!-- Add later -->
-	<!-- <meta property="og:image" content="https://example.com/og-image.png">
-		<meta property="og:url" content="https://example.com"> -->
-
+	<!-- OGP (SNS Share) -->
+	<meta property="og:title" content="Projects | Hatsumi Shimizu">
+	<meta property="og:description" content="Web開発における制作物を掲載しています。複雑な情報を構造化し、わかりやすい形で届けることを意識しています。認知負荷を減らす設計を心がけています。">
 	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Hatsumi's Portfolio Website">
+	<meta property="og:url" content="https://hatsumi-shimizu.com/ja/projects.html">
+	<meta property="og:image" content="https://hatsumi-shimizu.com/assets/img/og-projects.png">
+	<meta property="og:site_name" content="Portfolio Website of Hatsumi Shimizu">
+	<meta property="og:locale" content="ja">
+
+	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Projects | Hatsumi Shimizu">
+	<meta name="twitter:description" content="Hatsumi Shimizuのポートフォリオサイト。Web開発とライティングにおける制作物を掲載しています。複雑さや曖昧さを構造化し、認知負荷を軽減したプロダクトづくりを意識しています。">
+	<meta name="twitter:image" content="https://hatsumi-shimizu.com/assets/img/og-projects.png">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,10 +44,10 @@
 						<li class="navigation__item">
 							<a href="index.html" class="navigation__link--dark">Home</a>
 						</li>
-						<li class="navigation__item">
-							<!-- Coming soon -->
+						<!-- Coming soon -->
+						<!-- <li class="navigation__item">
 							<a href="#" class="navigation__link--dark">About</a>
-						</li>
+						</li> -->
 						<li class="navigation__item">
 							<a href="projects.html" class="navigation__link--dark active">Projects</a>
 						</li>
@@ -76,11 +78,11 @@
 						必要最小限の機能と、わかりやすい情報設計を大切にしています。
 					</p>
 					<div class="projects__explore">
-						<a href="https://github.com/htm823" class="btn-link" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i>View GitHub</a>
+						<a href="https://github.com/htm823" class="projects__btn btn btn-primary" target="_blank" rel="noreferrer noopener">View GitHub</a>
 					</div>
 				</div>
 				<figure class="projects__figure">
-					<img class="projects__portrait" src="../assets/img/portfolio.png" alt="Portrait of Hatsumi Shimizu">
+					<img class="projects__portrait" src="../assets/img/portfolio.png" alt="Webサイトのイラスト">
 				</figure>
 			</div>
 		</section>
@@ -89,10 +91,10 @@
 				<h2 class="gallery__title">All Projects</h2>
 				<ul class="cards">
 					<li class="card">
-						<a href="https://github.com/htm823/global_music_finder" class="card__link" target="_blank" rel="noreferrer noopener">
+						<a href="global-music-finder.html" class="card__link">
 							<div class="card__inner">
 								<figure class="card__figure">
-									<img class="card__img" src="../assets/img/global-music-finder.png" alt="Screenshot of Global Music Finder app">
+									<img class="card__img" src="../assets/img/global-music-finder.png" alt="Global Music Finderのトップページ">
 								</figure>
 								<dl class="card__descrption">
 									<dt class="card__title">Global Music Finder</dt>
@@ -102,10 +104,10 @@
 						</a>
 					</li>
 					<li class="card">
-						<a href="https://github.com/htm823/daily-organiser-2" class="card__link" target="_blank" rel="noreferrer noopener">
+						<a href="daily-organiser.html" class="card__link">
 							<div class="card__inner">
 								<figure class="card__figure">
-									<img class="card__img" src="../assets/img/daily-organiser.png" alt="Screenshot of Daily Organiser app">
+									<img class="card__img" src="../assets/img/daily-organiser.png" alt="Daily Organiserのトップページ">
 								</figure>
 								<dl class="card__descrption">
 									<dt class="card__title">Daily Organiser</dt>
@@ -115,10 +117,10 @@
 						</a>
 					</li>
 					<li class="card">
-						<a href="https://github.com/htm823/todo-list" class="card__link" target="_blank" rel="noreferrer noopener">
+						<a href="contact-form.html" class="card__link">
 							<div class="card__inner">
 								<figure class="card__figure">
-									<img class="card__img" src="../assets/img/contact-form.png" alt="Screenshot of Contact Management app">
+									<img class="card__img" src="../assets/img/contact-form.png" alt="Contact Form & Dashboardのトップページ">
 								</figure>
 								<dl class="card__descrption">
 									<dt class="card__title">Contact Form & Dashboard</dt>
@@ -128,10 +130,10 @@
 						</a>
 					</li>
 					<li class="card">
-						<a href="https://github.com/htm823/todo-list" class="card__link" target="_blank" rel="noreferrer noopener">
+						<a href="to-do.html" class="card__link">
 							<div class="card__inner">
 								<figure class="card__figure">
-									<img class="card__img" src="../assets/img/to-do-list.png" alt="Screenshot of To-do List app">
+									<img class="card__img" src="../assets/img/to-do-list.png" alt="To-do Listのトップページ">
 								</figure>
 								<dl class="card__descrption">
 									<dt class="card__title">To-do List</dt>
@@ -152,10 +154,10 @@
 					<li class="navigation__item">
 						<a href="index.html" class="navigation__link--light">Home</a>
 					</li>
-					<li class="navigation__item">
-						<!-- Coming soon -->
-						<a href="#" class="navigation__link--light">About</a>
-					</li>
+					<!-- Coming soon -->
+						<!-- <li class="navigation__item">
+							<a href="#" class="navigation__link--light">About</a>
+						</li> -->
 					<li class="navigation__item">
 						<a href="projects.html" class="navigation__link--light">Projects</a>
 					</li>

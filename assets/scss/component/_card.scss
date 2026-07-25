@@ -5,8 +5,8 @@
 	flex: 1;
 
 	@media (max-width: 1102px) {
-		width: calc(100% / 2 - 4rem);
-		max-width: 49.95rem;
+		max-width: calc(100% / 2 - 4rem);
+		// max-width: 49.95rem;
 	}
 
 	@media (max-width: 768px) {
@@ -62,10 +62,10 @@
 	}
 
 	&__figure {
-		// width: 32rem;
+		width: 32rem;
 		margin: 0 0 1.6rem;
 
-		@media (max-width: 1040px) {
+		@media (max-width: 1102px) {
 			width: 100%;
 		}
 	}

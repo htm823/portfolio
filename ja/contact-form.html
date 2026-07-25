@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- OGP (SNS Share) -->
+	<meta property="og:title" content="Contact Form & Dashboard | Hatsumi Shimizu">
+	<meta property="og:description" content="Contact Form & Dashboardの制作詳細ページです。制作過程における試行錯誤や使用技術などについて紹介しています。">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hatsumi-shimizu.vercel.app/ja/contact-form.html">
+	<meta property="og:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-contact-form.png">
+	<meta property="og:site_name" content="Portfolio Website of Hatsumi Shimizu">
+	<meta property="og:locale" content="ja">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Contact Form & Dashboard | Hatsumi Shimizu">
+	<meta name="twitter:description" content="Contact Form & Dashboardの制作詳細ページです。制作過程における試行錯誤や使用技術などについて紹介しています。">
+	<meta name="twitter:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-contact-form.png">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style-ja.css">
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+	<title>Contact Form & Dashboard | Hatsumi Shimizu</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner container">
+			<h1 class="header__title">Hatsumi</h1>
+			<button id="hamburger-menu" class="btn-menu" aria-expanded="false">
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+			</button>
+			<div id="hamburger-items" class="header__menu">
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="index.html" class="navigation__link--dark">Home</a>
+						</li>
+						<!-- Coming soon -->
+						<!-- <li class="navigation__item">
+							<a href="#" class="navigation__link--dark">About</a>
+						</li> -->
+						<li class="navigation__item">
+							<a href="projects.html" class="navigation__link--dark active">Projects</a>
+						</li>
+						<li class="navigation__item">
+							<a href="contact.html" class="navigation__link--dark">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="language">
+					<li class="language__item">
+						<a href="/en/contact-form.html" class="language__link">EN</a>
+					</li>
+					<li class="language__item">
+						<a href="contact-form.html" class="language__link--active">JA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="contact-form" class="project section">
+			<div class="project__inner container">
+				<div class="project__description">
+					<h1 class="project__title">Contact Form & Dashboard</h1>
+					<p class="project__tagline">
+						PHPとMySQLを用いて開発したお問い合わせ管理システムです。<br><br>
+						ユーザーはフォームからお問い合わせを送信できます。<br>
+						管理者は管理画面からお問い合わせの閲覧・検索・管理を行えます。<br><br>
+						HTML、jQuery、PHP、MySQL、Bootstrapを用いて開発しました。
+					</p>
+					<ul class="project__links">
+						<li>
+							<a href="https://github.com/htm823/contact-form" class="project__btn btn btn-github" target="_blank" rel="noreferrer noopener">View GitHub Repository</a>
+						</li>
+					</ul>
+				</div>
+				<figure class="project__figure">
+					<img src="../assets/img/form.png" class="project__img" alt="お問い合わせフォームのイラスト">
+				</figure>
+			</div>
+		</section>
+		<section id="contact-form-preview" class="preview section">
+			<div class="preview__inner container">
+				<h2 class="preview__title">Preview</h2>
+				<div class="preview__figure">
+					<video src="../assets/movie/contact-form.mov" autoplay muted loop class="preview__video"></video>
+				</div>
+			</div>
+		</section>
+		<section id="contact-form-background" class="background section">
+			<div class="background__inner container">
+				<h2 class="background__title">Background</h2>
+				<p class="background__description">
+					PHPによるフォーム送信、バリデーション、データベース連携の基礎を学ぶために制作しました。<br>
+					入力値の検証、データベースへの保存・取得、表示前のデータ整形など、一連のバックエンド処理の実装を目的としました。
+				</p>
+			</div>
+		</section>
+		<section id="contact-form-features" class="features section">
+			<div class="features__inner container">
+				<h2 class="features__title">Features</h2>
+				<dl class="features__list">
+					<dt><i class="fa-regular fa-square-check"></i>お問い合わせの送信</dt>
+					<dd>必要事項を入力することで、お問い合わせを送信できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>住所の自動入力</dt>
+					<dd>郵便番号を入力すると、住所を自動入力できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>お問い合わせ一覧の閲覧</dt>
+					<dd>管理者はログイン後、お問い合わせ内容を一覧で確認できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>お問い合わせ検索</dt>
+					<dd>キーワードを指定してお問い合わせを検索できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>お問い合わせの並び替え</dt>
+					<dd>新しい順・古い順に並び替えられます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>既読・未読ステータス</dt>
+					<dd>未読のお問い合わせを視覚的に把握しやすくなっています。</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="contact-form-tech-stack" class="tech-stack section">
+			<div class="tech-stack__inner container">
+				<h2 class="tech-stack__title">Tech Stack</h2>
+				<dl class="tech-stack__list">
+					<dt class="tech-stack__category"><i class="fa-solid fa-code"></i>Frontend</dt>
+					<dd class="tech-stack__tool">
+						<ul class="tech-stack__languages">
+							<li class="tech-stack__language">HTML</li>
+							<li class="tech-stack__language">JavaScript / jQuery</li>
+						</ul>
+					</dd>
+					<dt class="tech-stack__category"><i class="fa-solid fa-database"></i>Backend</dt>
+					<dd class="tech-stack__tool">
+						<ul class="tech-stack__languages">
+							<li class="tech-stack__language">PHP</li>
+							<li class="tech-stack__language">MySQL</li>
+						</ul>
+					</dd>
+					<dt class="tech-stack__category"><i class="fa-solid fa-book-open"></i>Libraries</dt>
+					<dd class="tech-stack__tool">
+						<ul class="tech-stack__languages">
+							<li class="tech-stack__language">Bootstrap</li>
+							<li class="tech-stack__language"><a href="https://github.com/yubinbango/yubinbango" class="text-link" target="_blank" rel="noreferrer noopener">yubinbango.js</a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="contact-form-technology-choices" class="technology-choices section">
+			<div class="technology-choices__inner container">
+				<h2 class="technology-choices__title">Technology Choices</h2>
+				<p class="technology-choices__description">
+					PHPのフォーム処理とデータベース連携の理解を目的としていたため、フレームワークは使用せず、PHPのみで実装しました。<br>
+					スタイリングには開発効率を考慮してBootstrapを採用しました。<br><br>
+					また、日本の住所入力に特化しており、導入が容易なことから、住所自動入力ライブラリとして<a href="https://github.com/yubinbango/yubinbango" class="text-link" target="_blank" rel="noreferrer noopener">yubinbango.js</a>を採用しました。
+				</p>
+			</div>
+		</section>
+		<section id="contact-form-system-design" class="system-design section">
+			<div class="system-design__inner container">
+				<h2 class="system-design__title">System Design</h2>
+				<p class="system-design__description">
+					BootstrapのSecondaryカラーをベースに、シンプルで分かりやすいUIを目指しました。<br>
+					エラーメッセージや未読ステータスには赤色を使用し、ユーザーが重要な情報を見落としにくいデザインにしました。<br><br>
+					管理画面には左固定のサイドメニューとページネーションを配置しました。<br>
+					1ページあたりには、一目で把握できる情報量として、5件分のお問い合わせが表示されるようにしました。
+				</p>
+			</div>
+		</section>
+		<section id="contact-form-implement-highlights" class="implement-highlights section">
+			<div class="implement-highlights__inner container">
+				<h2 class="implement-highlights__title">Implementation Highlights</h2>
+				<p class="implement-highlights__description">
+					データベース接続処理を共通化し、複数のファイルから再利用できる構成にしました。<br>
+					接続情報は環境変数として管理し、異なる環境でも、設定のみの変更で簡単に動作するよう設計しました。<br><br>
+					お問い合わせ入力から送信完了までのデータ保持、および管理画面のログイン状態の管理にはセッションを利用しています。<br><br>
+					データを画面へ出力する際にはエスケープ処理を追加し、安全にHTMLが生成されるよう実装しました。<br><br>
+					ローカル開発環境では、実際のメールアドレスへ送信することなくメール送信を確認できるよう、<a href="https://mailtrap.io/ja/" class="text-link" target="_blank" rel="noreferrer noopener">Mailtrap</a>を使用しました。<br>管理画面の動作を確認するためのデモアカウントを用意しています。<br><br>
+					セットアップ方法やデモアカウントの詳細については、<a href="https://github.com/htm823/contact-form" class="text-link" target="_blank" rel="noreferrer noopener">README</a>をご覧ください。
+				</p>
+			</div>
+		</section>
+		<section id="contact-form-challenges-and-solution" class="challenges-and-solution section">
+			<div class="challenges-and-solution__inner container">
+				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
+				<p class="challenges-and-solution__description">
+					バリデーションエラー発生時やブラウザの戻る操作を行った際に、入力内容が失われてしまうことが課題でした。<br>
+					解決策として、入力内容をセッションに保持し、送信完了まで同じデータを利用する仕組みを実装しました。<br><br>
+					管理画面の認証にもセッションを利用し、ログインからログアウトまでの認証状態を維持できるようにしました。<br>
+					セッション管理やフォーム処理の流れについて理解を深めることができました。
+				</p>
+			</div>
+		</section>
+		<section id="contact-form-security" class="security section">
+			<div class="security__inner container">
+				<h2 class="security__title">Security</h2>
+				<p class="security__description">
+					セキュリティを考慮した実装を心がけました。<br><br>
+					パスワードは、password_hash()を用いてハッシュ化し、ハッシュ化された状態でデータベースに保存しました。<br>
+					認証にはpassword_verify()を使用し、入力パスワードとハッシュ化されたパスワードが一致しているか確認可能にしました。<br><br>
+					また、SQLインジェクション対策として、データをデータベースに保存する際にpreparedステートメントを使用しました。<br>
+					XSS対策としては、入力データやデータベースから取得した値を画面へ出力する際にエスケープ処理を追加しました。<br><br>
+					管理画面はセッション認証によって保護し、認証済みのユーザーのみが管理機能へアクセスできるようにしています。
+				</p>
+			</div>
+		</section>
+		<section id="contact-form-future-improvements" class="future-improvements section">
+			<div class="future-improvements__inner container">
+				<h2 class="future-improvements__title">Future Improvements</h2>
+				<p class="future-improvements__description">
+					今後は、ユーザー登録機能の追加や、PHPUnitを用いた自動テストの導入に取り組みたいと考えています。<br><br>
+					また、データベース設計の正規化や、管理画面のレスポンシブ対応を進めることで、保守性と利便性を向上させたいです。<br>
+					実際の利用シーンやターゲットユーザーを明確にし、仕様を見直したうえで、本番環境へのデプロイを行う予定です。
+				</p>
+			</div>
+		</section>
+		<section id="explore-more-projects" class="explore section--last">
+			<div class="explore__inner container">
+				<h2 class="explore__title">Explore More Projects</h2>
+				<ul class="cards">
+					<li class="card">
+						<a href="global-music-finder.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/global-music-finder.png" alt="Global Music Finderのトップページ">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Global Music Finder</dt>
+									<dd class="card__detail">音楽検索アプリ</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="daily-organiser.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/daily-organiser.png" alt="Daily Organiserのトップページ">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Daily Organiser</dt>
+									<dd class="card__detail">タスク管理アプリ</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="to-do.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/to-do-list.png" alt="To-do Listのトップページ">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">To-do List</dt>
+									<dd class="card__detail">ToDoリスト</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__inner container">
+			<small class="footer__copyright">&copy; 2026 Hatsumi Shimizu</small>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="index.html" class="navigation__link--light">Home</a>
+					</li>
+					<!-- Coming soon -->
+					<!-- <li class="navigation__item">
+						<a href="#" class="navigation__link--light">About</a>
+					</li> -->
+					<li class="navigation__item">
+						<a href="projects.html" class="navigation__link--light">Projects</a>
+					</li>
+					<li class="navigation__item">
+						<a href="contact.html" class="navigation__link--light">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="../assets/js/hamburger-menu.js"></script>
+</body>
+
+</html>

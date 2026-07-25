@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en_GB">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- OGP (SNS Share) -->
+	<meta property="og:title" content="Daily Organiser | Hatsumi Shimizu">
+	<meta property="og:description" content="Details of Daily Organiser, a project by Hatsumi Shimizu. Exploring the process of turning complexity into structure in web development.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hatsumi-shimizu.vercel.app/en/daily-organiser.html">
+	<meta property="og:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-daily-organiser.png">
+	<meta property="og:site_name" content="Portfolio Website of Hatsumi Shimizu">
+	<meta property="og:locale" content="en_GB">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Daily Organiser | Hatsumi Shimizu">
+	<meta name="twitter:description" content="Details of Daily Organiser, a project by Hatsumi Shimizu. Exploring the process of turning complexity into structure in web development.">
+	<meta name="twitter:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-daily-organiser.png">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style-en.css">
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+	<title>Daily Organiser | Hatsumi Shimizu</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner container">
+			<h1 class="header__title">Hatsumi</h1>
+			<button id="hamburger-menu" class="btn-menu" aria-expanded="false">
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+			</button>
+			<div id="hamburger-items" class="header__menu">
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="index.html" class="navigation__link--dark">Home</a>
+						</li>
+						<!-- Coming soon -->
+						<!-- <li class="navigation__item">
+							<a href="#" class="navigation__link--dark">About</a>
+						</li> -->
+						<li class="navigation__item">
+							<a href="projects.html" class="navigation__link--dark active">Projects</a>
+						</li>
+						<li class="navigation__item">
+							<a href="contact.html" class="navigation__link--dark">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="language">
+					<li class="language__item">
+						<a href="daily-organiser.html" class="language__link--active">EN</a>
+					</li>
+					<li class="language__item">
+						<a href="/ja/daily-organiser.html" class="language__link">JA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="daily-organiser" class="project section">
+			<div class="project__inner container">
+				<div class="project__description">
+					<h1 class="project__title">Daily Organiser</h1>
+					<p class="project__tagline">
+						A simple task management application.<br>
+						Organise work and personal tasks separately.<br><br>
+						Built with HTML, CSS, and JavaScript.
+					</p>
+					<ul class="project__links">
+						<li>
+							<a href="https://daily-organiser-2.vercel.app/" class="project__btn btn btn-primary" target="_blank" rel="noreferrer noopener">Visit Daily Organiser</a>
+						</li>
+						<li>
+							<a href="https://github.com/htm823/daily-organiser-2" class="project__btn btn btn-github" target="_blank" rel="noreferrer noopener">View GitHub Repository</a>
+						</li>
+					</ul>
+				</div>
+				<figure class="project__figure">
+					<img src="../assets/img/checklist-tab.png" class="project__img" alt="Illustration of a checklist with tabs">
+				</figure>
+			</div>
+		</section>
+		<section id="daily-organiser-preview" class="preview section">
+			<div class="preview__inner container">
+				<h2 class="preview__title">Preview</h2>
+				<div class="preview__figure">
+					<video src="../assets/movie/daily-organiser.mov" autoplay muted loop class="preview__video"></video>
+				</div>
+			</div>
+		</section>
+		<section id="daily-organiser-background" class="background section">
+			<div class="background__inner container">
+				<h2 class="background__title">Background</h2>
+				<p class="background__description">
+					While using Notion on a daily basis, I realised that the feature I relied on most was its to-do list. This inspired me to build a lightweight task management application focused on only the essential functionality.<br><br>
+					I also found the Notion desktop application inconvenient for quickly jotting down small tasks, as it required opening another window. Although the browser version is available, signing in before first use adds unnecessary friction.<br><br>
+					With this in mind, I designed Daily Organiser around a simple concept: allow users to capture tasks instantly without requiring an account or sign-in.
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-features" class="features section">
+			<div class="features__inner container">
+				<h2 class="features__title">Features</h2>
+				<dl class="features__list">
+					<dt><i class="fa-regular fa-square-check"></i>Add & View Tasks</dt>
+					<dd>Quickly capture new tasks and manage them from a single list.</dd>
+					<dt><i class="fa-regular fa-square-check"></i>Edit Tasks</dt>
+					<dd>Update task details whenever they change.</dd>
+					<dt><i class="fa-regular fa-square-check"></i>Delete Tasks</dt>
+					<dd>Remove individual tasks or clear multiple tasks when needed.</dd>
+					<dt><i class="fa-regular fa-square-check"></i>Task Completion</dt>
+					<dd>Mark tasks as complete with a checkbox and visual strikethrough, making progress easy to track.</dd>
+					<dt><i class="fa-regular fa-square-check"></i>Local Storage</dt>
+					<dd>Keep tasks stored in the browser without requiring an account.</dd>
+					<dt><i class="fa-regular fa-square-check"></i>Category Filtering</dt>
+					<dd>Switch between All, Work, and Personal tasks for better organisation.</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="daily-organiser-tech-stack" class="tech-stack section">
+			<div class="tech-stack__inner container">
+				<h2 class="tech-stack__title">Tech Stack</h2>
+				<dl class="tech-stack__list">
+					<dt class="tech-stack__category"><i class="fa-solid fa-code"></i>Frontend</dt>
+					<dd class="tech-stack__tool">
+						<ul class="tech-stack__languages">
+							<li class="tech-stack__language">HTML</li>
+							<li class="tech-stack__language">CSS</li>
+							<li class="tech-stack__language">JavaScript</li>
+						</ul>
+					</dd>
+					<dt class="tech-stack__category"><i class="fa-solid fa-rocket"></i>Deployment</dt>
+					<dd class="tech-stack__tool">Vercel</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="daily-organiser-technology-choices" class="technology-choices section">
+			<div class="technology-choices__inner container">
+				<h2 class="technology-choices__title">Technology Choices</h2>
+				<p class="technology-choices__description">
+					I chose to build the application with HTML, CSS, and vanilla JavaScript so I could focus on implementing fundamental CRUD operations, local storage, and filtering functionality. Rather than relying on a framework, I wanted to strengthen my understanding of DOM manipulation and data management using core web technologies.
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-system-design" class="system-design section">
+			<div class="system-design__inner container">
+				<h2 class="system-design__title">System Design</h2>
+				<p class="system-design__description">
+					To make it easy to switch between different types of tasks, I created three tabs: All, Work, and Personal. The active tab is highlighted with an accent colour so users can immediately recognise which category they are viewing. Each task also displays a category label, making it easier to distinguish work and personal tasks when viewing the complete list.
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-implement-highlights" class="implement-highlights section">
+			<div class="implement-highlights__inner container">
+				<h2 class="implement-highlights__title">Implementation Highlights</h2>
+				<p class="implement-highlights__description">
+					I structured the application with a clear separation between data management and UI rendering.<br><br>
+					For styling, I adopted the BEM methodology because it provides a clear component structure and works well with SCSS.<br><br>
+
+					All tasks are stored in a single tasks array, which serves as the source of truth for creating, editing, deleting, and updating task status. The interface is always rendered from this data, helping to keep the UI consistent with the underlying state.<br><br>
+					To improve usability, leading and trailing whitespace is automatically removed from user input before saving.<br><br>
+					The application also supports keyboard interactions, allowing users to save with the Enter key and cancel with the Escape key, making task management more efficient without relying solely on the mouse.
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-challenges-and-solution" class="challenges-and-solution section">
+			<div class="challenges-and-solution__inner container">
+				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
+				<p class="challenges-and-solution__description">
+					One of the main challenges was deciding how to manage task data and assign unique IDs. To solve this, I represented each task as an object containing its ID, task content, category, and completion status. This structure made it straightforward to edit, delete, and update individual tasks while also providing a scalable foundation for adding new features in the future.
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-future-improvements" class="future-improvements section">
+			<div class="future-improvements__inner container">
+				<h2 class="future-improvements__title">Future Improvements</h2>
+				<p class="future-improvements__description">
+					My next priority is to improve the application's accessibility.
+					I plan to add appropriate accessibility attributes, such as `aria-label`, to form controls and buttons so the interface is easier to use with screen readers.
+					I also intend to review the colour palette and improve colour contrast to make the interface more accessible and easier to read.
+				</p>
+			</div>
+		</section>
+		<section id="explore-more-projects" class="explore section--last">
+			<div class="explore__inner container">
+				<h2 class="explore__title">Explore More Projects</h2>
+				<ul class="cards">
+					<li class="card">
+						<a href="global-music-finder.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/global-music-finder.png" alt="Homepage of Global Music Finder">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Global Music Finder</dt>
+									<dd class="card__detail">Music search app</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="contact-form.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/contact-form.png" alt="Homepage of Contact Form & Dashboard">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Contact Form & Dashboard</dt>
+									<dd class="card__detail">Contact Management App</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="to-do.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/to-do-list.png" alt="Homepage of To-do List">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">To-do List</dt>
+									<dd class="card__detail">Minimal to-do list app</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__inner container">
+			<small class="footer__copyright">&copy; 2026 Hatsumi Shimizu</small>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="index.html" class="navigation__link--light">Home</a>
+					</li>
+					<!-- Coming soon -->
+					<!-- <li class="navigation__item">
+						<a href="#" class="navigation__link--light">About</a>
+					</li> -->
+					<li class="navigation__item">
+						<a href="projects.html" class="navigation__link--light">Projects</a>
+					</li>
+					<li class="navigation__item">
+						<a href="contact.html" class="navigation__link--light">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="../assets/js/hamburger-menu.js"></script>
+</body>
+
+</html>

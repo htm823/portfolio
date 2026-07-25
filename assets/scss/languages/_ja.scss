@@ -43,3 +43,27 @@ body {
 		font-size: var(--font-size-base);
 	}
 }
+
+.features {
+	&__list {
+		> dt {
+			font-size: var(--font-size-base);
+			font-weight: bold;
+
+			> .fa-square-check {
+				color: var(--color-primary-dark);
+				margin: 0 .4rem 0 0;
+			}
+		}
+
+		> dd {
+			font-size: var(--font-size-sm);
+			margin: .4rem 0 2.4rem 2.7rem;
+			color: var(--color-text-light);
+
+			&:last-child {
+				margin: .4rem 0 0 2.7rem;
+			}
+		}
+	}
+}

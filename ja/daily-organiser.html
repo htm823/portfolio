@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- OGP (SNS Share) -->
+	<meta property="og:title" content="Daily Organiser | Hatsumi Shimizu">
+	<meta property="og:description" content="Daily Organiserの制作詳細ページです。制作過程における試行錯誤や使用技術などについて紹介しています。">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hatsumi-shimizu.vercel.app/ja/daily-organiser.html">
+	<meta property="og:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-daily-organiser.png">
+	<meta property="og:site_name" content="Portfolio Website of Hatsumi Shimizu">
+	<meta property="og:locale" content="ja">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Daily Organiser | Hatsumi Shimizu">
+	<meta name="twitter:description" content="Daily Organiserの制作詳細ページです。制作過程における試行錯誤や使用技術などについて紹介しています。">
+	<meta name="twitter:image" content="https://hatsumi-shimizu.vercel.app/assets/img/og-daily-organiser.png">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style-ja.css">
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+	<title>Daily Organiser | Hatsumi Shimizu</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner container">
+			<h1 class="header__title">Hatsumi</h1>
+			<button id="hamburger-menu" class="btn-menu" aria-expanded="false">
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+				<span class="btn-bar"></span>
+			</button>
+			<div id="hamburger-items" class="header__menu">
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="index.html" class="navigation__link--dark">Home</a>
+						</li>
+						<!-- Coming soon -->
+						<!-- <li class="navigation__item">
+							<a href="#" class="navigation__link--dark">About</a>
+						</li> -->
+						<li class="navigation__item">
+							<a href="projects.html" class="navigation__link--dark active">Projects</a>
+						</li>
+						<li class="navigation__item">
+							<a href="contact.html" class="navigation__link--dark">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="language">
+					<li class="language__item">
+						<a href="/en/daily-organiser.html" class="language__link">EN</a>
+					</li>
+					<li class="language__item">
+						<a href="daily-organiser.html" class="language__link--active">JA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="daily-organiser" class="project section">
+			<div class="project__inner container">
+				<div class="project__description">
+					<h1 class="project__title">Daily Organiser</h1>
+					<p class="project__tagline">
+						シンプルなタスク管理アプリ。<br>
+						仕事とプライベートのタスクを分けて管理可能。<br><br>
+						HTML、CSS、JavaScriptを用いて開発。
+					</p>
+					<ul class="project__links">
+						<li>
+							<a href="https://daily-organiser-2.vercel.app/" class="project__btn btn btn-primary" target="_blank" rel="noreferrer noopener">Visit Daily Organiser</a>
+						</li>
+						<li>
+							<a href="https://github.com/htm823/daily-organiser-2" class="project__btn btn btn-github" target="_blank" rel="noreferrer noopener">View GitHub Repository</a>
+						</li>
+					</ul>
+				</div>
+				<figure class="project__figure">
+					<img src="../assets/img/checklist-tab.png" class="project__img" alt="タブ付きチェックリストのイラスト">
+				</figure>
+			</div>
+		</section>
+		<section id="daily-organiser-preview" class="preview section">
+			<div class="preview__inner container">
+				<h2 class="preview__title">Preview</h2>
+				<div class="preview__figure">
+					<video src="../assets/movie/daily-organiser.mov" autoplay muted loop class="preview__video"></video>
+				</div>
+			</div>
+		</section>
+		<section id="daily-organiser-background" class="background section">
+			<div class="background__inner container">
+				<h2 class="background__title">Background</h2>
+				<p class="background__description">
+					Notionを日常的に使う中で、自分が最もよく利用している機能がTo-doリストであることに気づきました。<br>
+					そこで、必要な機能だけを切り出し、シンプルで使いやすいタスク管理アプリを制作しました。<br><br>
+					Notionのデスクトップアプリは新しいウィンドウを開く必要があり、少しメモを取りたいときに不便さを感じました。<br>
+					ブラウザ版も利用できますが、初回はログインが必要なため、手間がかかります。<br><br>
+					そのため、本アプリは「思い浮かんだタスクを、ログイン不要ですぐに記録できること」をコンセプトに制作しました。
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-features" class="features section">
+			<div class="features__inner container">
+				<h2 class="features__title">Features</h2>
+				<dl class="features__list">
+					<dt><i class="fa-regular fa-square-check"></i>タスクの追加・表示</dt>
+					<dd>思いついたタスクをすぐに記録し、一覧で管理できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>タスクの編集</dt>
+					<dd>内容が変わっても簡単に更新できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>タスクの削除（個別・一括）</dt>
+					<dd>不要なタスクを状況に応じて整理できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>完了状態の管理</dt>
+					<dd>完了したタスクを視覚的に区別し、進捗を把握しやすくします。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>ローカルストレージへの保存</dt>
+					<dd>ログイン不要で、ブラウザを閉じてもタスクを保持できます。</dd>
+					<dt><i class="fa-regular fa-square-check"></i>カテゴリ別フィルタリング</dt>
+					<dd>仕事とプライベートのタスクを切り替えながら管理できます。</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="daily-organiser-tech-stack" class="tech-stack section">
+			<div class="tech-stack__inner container">
+				<h2 class="tech-stack__title">Tech Stack</h2>
+				<dl class="tech-stack__list">
+					<dt class="tech-stack__category"><i class="fa-solid fa-code"></i>Frontend</dt>
+					<dd class="tech-stack__tool">
+						<ul class="tech-stack__languages">
+							<li class="tech-stack__language">HTML</li>
+							<li class="tech-stack__language">CSS</li>
+							<li class="tech-stack__language">JavaScript</li>
+						</ul>
+					</dd>
+					<dt class="tech-stack__category"><i class="fa-solid fa-rocket"></i>Deployment</dt>
+					<dd class="tech-stack__tool">Vercel</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="daily-organiser-technology-choices" class="technology-choices section">
+			<div class="technology-choices__inner container">
+				<h2 class="technology-choices__title">Technology Choices</h2>
+				<p class="technology-choices__description">
+					JavaScriptのCRUD操作やローカルストレージ、フィルタリング機能の実装を目的に制作を進めました。<br>
+					フレームワークは使用せず、JavaScriptの基礎理解に重点を置きました。
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-system-design" class="system-design section">
+			<div class="system-design__inner container">
+				<h2 class="system-design__title">System Design</h2>
+				<p class="system-design__description">
+					仕事とプライベートのタスクを素早く切り替えられるよう、All・Work・Personalの3つのタブを設けました。<br>
+					現在選択しているカテゴリが一目で分かるよう、アクティブなタブにはアクセントカラーを適用しています。<br><br>
+					各タスクにはカテゴリラベルを表示し、個々のタスクがどのカテゴリに属するのか視覚的に判断しやすくしました。
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-implement-highlights" class="implement-highlights section">
+			<div class="implement-highlights__inner container">
+				<h2 class="implement-highlights__title">Implementation Highlights</h2>
+				<p class="implement-highlights__description">
+					データと画面表示の責務を分離することを意識して実装しました。<br><br>
+					タスクはtasks配列で一元管理し、このデータを基準に追加・編集・削除・完了状態の更新を行っています。<br>画面表示は常にこの配列から生成することで、データとUIの整合性を保ちやすい構成にしました。<br><br>
+					また、入力時には前後の不要な空白が除去されるようにしました。<br><br>
+					マウス操作だけでなく、Enterキーによる保存やEscapeキーによるキャンセルにも対応することで、キーボード中心でも快適に操作できるよう工夫しました。
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-challenges-and-solution" class="challenges-and-solution section">
+			<div class="challenges-and-solution__inner container">
+				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
+				<p class="challenges-and-solution__description">
+					開発当初は、各タスクの状態管理や一意なIDの付与実装に苦労しました。<br>
+					解決策として、各タスクをオブジェクトとして管理し、ID・タスク内容・カテゴリ・完了状態を保持できるよう工夫しました。
+					状態管理や今後の機能拡張を考慮したコード記述を心がけました。
+				</p>
+			</div>
+		</section>
+		<section id="daily-organiser-future-improvements" class="future-improvements section">
+			<div class="future-improvements__inner container">
+				<h2 class="future-improvements__title">Future Improvements</h2>
+				<p class="future-improvements__description">
+					今後は、アクセシビリティの改善に取り組む予定です。<br>
+					フォーム要素やボタンにaria-labelなどの適切な属性を追加し、スクリーンリーダー利用者への配慮を強化します。<br><br>
+					また、一部の配色においては、コントラスト比が不十分な状態です。<br>
+					使用カラーを見直し、より視認性の高いUIへ改善したいと考えています。
+				</p>
+			</div>
+		</section>
+		<section id="explore-more-projects" class="explore section--last">
+			<div class="explore__inner container">
+				<h2 class="explore__title">Explore More Projects</h2>
+				<ul class="cards">
+					<li class="card">
+						<a href="global-music-finder.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/global-music-finder.png" alt="Screenshot of Global Music Finder app">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Global Music Finder</dt>
+									<dd class="card__detail">音楽検索アプリ</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="contact-form.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/contact-form.png" alt="Contact Form & Dashboardのトップページ">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">Contact Form & Dashboard</dt>
+									<dd class="card__detail">お問い合わせ管理システム</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+					<li class="card">
+						<a href="to-do.html" class="card__link">
+							<div class="card__inner">
+								<figure class="card__figure">
+									<img class="card__img" src="../assets/img/to-do-list.png" alt="To-do Listのトップページ">
+								</figure>
+								<dl class="card__descrption">
+									<dt class="card__title">To-do List</dt>
+									<dd class="card__detail">ToDoリスト</dd>
+								</dl>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__inner container">
+			<small class="footer__copyright">&copy; 2026 Hatsumi Shimizu</small>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="index.html" class="navigation__link--light">Home</a>
+					</li>
+					<!-- Coming soon -->
+					<!-- <li class="navigation__item">
+						<a href="#" class="navigation__link--light">About</a>
+					</li> -->
+					<li class="navigation__item">
+						<a href="projects.html" class="navigation__link--light">Projects</a>
+					</li>
+					<li class="navigation__item">
+						<a href="contact.html" class="navigation__link--light">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="../assets/js/hamburger-menu.js"></script>
+</body>
+
+</html>
