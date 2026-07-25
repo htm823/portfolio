@@ -71,9 +71,10 @@
 				<div class="project__description">
 					<h1 class="project__title">Contact Form & Dashboard</h1>
 					<p class="project__tagline">
-						PHPとMySQLを用いて開発したお問い合わせ管理システムです。<br>
-						ユーザーはフォームからお問い合わせを送信でき、管理者は管理画面からお問い合わせの閲覧・検索・管理を行えます。<br>
-						HTML、CSS、JavaScript、jQuery、PHP、MySQLを用いて開発しました。
+						PHPとMySQLを用いて開発したお問い合わせ管理システムです。<br><br>
+						ユーザーはフォームからお問い合わせを送信できます。<br>
+						管理者は管理画面からお問い合わせの閲覧・検索・管理を行えます。<br><br>
+						HTML、jQuery、PHP、MySQL、Bootstrapを用いて開発しました。
 					</p>
 					<ul class="project__links">
 						<li>
@@ -165,42 +166,33 @@
 				<h2 class="system-design__title">System Design</h2>
 				<p class="system-design__description">
 					BootstrapのSecondaryカラーをベースに、シンプルで分かりやすいUIを目指しました。<br>
-					エラーメッセージや未読ステータスには赤色を使用し、ユーザーが重要な情報を見落としにくいデザインとしています。<br>
-					管理画面には左固定のサイドメニューとページネーションを配置し、1ページあたり5件ずつ表示することで一覧性と操作性を両立しました。
+					エラーメッセージや未読ステータスには赤色を使用し、ユーザーが重要な情報を見落としにくいデザインにしました。<br><br>
+					管理画面には左固定のサイドメニューとページネーションを配置しました。<br>
+					1ページあたりには、一目で把握できる情報量として、5件分のお問い合わせが表示されるようにしました。
 				</p>
 			</div>
 		</section>
 		<section id="contact-form-implement-highlights" class="implement-highlights section">
 			<div class="implement-highlights__inner container">
-				<figure class="implement-highlights__figure">
-					<img src="" class="implement-highlights__img" alt="">
-				</figure>
 				<h2 class="implement-highlights__title">Implementation Highlights</h2>
 				<p class="implement-highlights__description">
-					<span class="first-block">
 						データベース接続処理を共通化し、複数のファイルから再利用できる構成にしました。<br>
-						接続情報は環境変数として管理し、環境ごとに設定のみ変更すれば動作するよう設計しています。<br>
-						お問い合わせ入力から送信完了までのデータ保持、および管理画面のログイン状態の管理にはセッションを利用しています。<br>
-						また、画面へ出力する際はエスケープ処理を行い、安全にHTMLを生成するよう実装しました。
-					</span>
-					<span class="following-block">
-						ローカル開発環境では、実際のメールアドレスへ送信することなくメール送信を確認できるよう、Mailtrapを使用しました。また、管理画面の動作を確認できるよう、デモアカウントを用意しています。
+						接続情報は環境変数として管理し、異なる環境でも、設定のみの変更で簡単に動作するよう設計しました。<br><br>
+						お問い合わせ入力から送信完了までのデータ保持、および管理画面のログイン状態の管理にはセッションを利用しています。<br><br>
+						データを画面へ出力する際にはエスケープ処理を追加し、安全にHTMLが生成されるよう実装しました。<br><br>
+						ローカル開発環境では、実際のメールアドレスへ送信することなくメール送信を確認できるよう、<a href="https://mailtrap.io/ja/" class="text-link" target="_blank" rel="noreferrer noopener">Mailtrap</a>を使用しました。<br>管理画面の動作を確認するためのデモアカウントを用意しています。<br><br>
 						セットアップ方法やデモアカウントの詳細については、<a href="https://github.com/htm823/contact-form" class="text-link" target="_blank" rel="noreferrer noopener">README</a>をご覧ください。
-					</span>
 				</p>
 			</div>
 		</section>
 		<section id="contact-form-challenges-and-solution" class="challenges-and-solution section">
 			<div class="challenges-and-solution__inner container">
-				<figure class="challenges-and-solution__figure">
-					<img src="" class="challenges-and-solution__img" alt="">
-				</figure>
 				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
 				<p class="challenges-and-solution__description">
 					バリデーションエラー発生時やブラウザの戻る操作を行った際に、入力内容が失われてしまうことが課題でした。<br>
-					この問題を解決するため、入力内容をセッションに保持し、送信完了まで同じデータを利用する仕組みを実装しました。<br>
-					また、管理画面の認証も同様にセッションを利用し、ログインからログアウトまで認証状態を維持しています。<br>
-					この実装を通して、セッション管理やフォーム処理の流れについて理解を深めることができました。
+					解決策として、入力内容をセッションに保持し、送信完了まで同じデータを利用する仕組みを実装しました。<br><br>
+					管理画面の認証にもセッションを利用し、ログインからログアウトまでの認証状態を維持できるようにしました。<br>
+					セッション管理やフォーム処理の流れについて理解を深めることができました。
 				</p>
 			</div>
 		</section>
@@ -208,21 +200,20 @@
 			<div class="security__inner container">
 				<h2 class="security__title">Security</h2>
 				<p class="security__description">
-					セキュリティを考慮しながら実装を行いました。<br>
-					パスワードは<span class="code">password_hash()</span>を使用して安全にハッシュ化し、認証には<span class="code">password_verify()</span>を使用しています。<br>
-					また、SQLインジェクション対策としてプリペアドステートメントを採用し、XSS対策として画面へ出力する際にエスケープ処理を行っています。<br>
-					さらに、管理画面はセッション認証によって保護し、認証済みのユーザーのみが管理機能へアクセスできるようにしています。
+					セキュリティを考慮した実装を心がけました。<br><br>
+					パスワードは、password_hash()を用いてハッシュ化し、ハッシュ化された状態でデータベースに保存しました。<br>
+					認証にはpassword_verify()を使用し、入力パスワードとハッシュ化されたパスワードが一致しているか確認可能にしました。<br><br>
+					また、SQLインジェクション対策として、データをデータベースに保存する際にpreparedステートメントを使用しました。<br>
+					XSS対策としては、入力データやデータベースから取得した値を画面へ出力する際にエスケープ処理を追加しました。<br><br>
+					管理画面はセッション認証によって保護し、認証済みのユーザーのみが管理機能へアクセスできるようにしています。
 				</p>
 			</div>
 		</section>
 		<section id="contact-form-future-improvements" class="future-improvements section">
 			<div class="future-improvements__inner container">
-				<figure class="future-improvements__figure">
-					<img src="" class="future-improvements__img" alt="">
-				</figure>
 				<h2 class="future-improvements__title">Future Improvements</h2>
 				<p class="future-improvements__description">
-					今後は、ユーザー登録機能の追加や、PHPUnitを用いた自動テストの導入に取り組みたいと考えています。<br>
+					今後は、ユーザー登録機能の追加や、PHPUnitを用いた自動テストの導入に取り組みたいと考えています。<br><br>
 					また、データベース設計の正規化や、管理画面のレスポンシブ対応を進めることで、保守性と利便性を向上させたいです。<br>
 					実際の利用シーンやターゲットユーザーを明確にし、仕様を見直したうえで、本番環境へのデプロイを行う予定です。
 				</p>

@@ -152,82 +152,41 @@
 			<div class="system-design__inner container">
 				<h2 class="system-design__title">System Design</h2>
 				<p class="system-design__description">
-					シンプルで直感的に操作できるUIを目指しました。操作ボタンにはアクセントカラーを使用し、クリックできる要素であることが視覚的に伝わるようにしています。<br>
-					また、削除ボタンには赤色を使用し、注意が必要な操作であることを区別できるデザインにしました。
+					シンプルで直感的に操作できるUIを目指しました。<br>
+					操作ボタンにはアクセントカラーを使用し、クリックできる要素であることが視覚的に伝わるようにしています。<br>
+					削除ボタンには赤色を使用し、注意が必要な操作であることを区別できるデザインにしました。
 				</p>
 			</div>
 		</section>
 		<section id="todo-list-implement-highlights" class="implement-highlights section">
 			<div class="implement-highlights__inner container">
-				<figure class="implement-highlights__figure">
-					<img src="" class="implement-highlights__img" alt="">
-				</figure>
 				<h2 class="implement-highlights__title">Implementation Highlights</h2>
 				<p class="implement-highlights__description">
-					<span class="first-block">
-						タスクの追加・削除・完了状態の変更は、<span class="code">tasks</span>配列を唯一のデータソースとして管理するよう実装しました。<br>
-						データを更新した後に画面を再描画する構成とすることで、データとUIの整合性を保てるようにしています。
-					</span>
-					<span class="following-block">
-						また、タスクの追加はフォームの<span class="code">submit</span>イベントを利用し、追加ボタンのクリックとEnterキーの両方で操作できるようにしました。
-					</span>
+					タスクの追加・削除・完了状態の変更は、tasks配列を唯一のデータソースとして管理するよう実装しました。<br>
+					データを更新した後に画面を再描画する構成とすることで、データとUIの整合性を保てるようにしています。<br><br>
+					タスクの追加にはフォームのsubmitイベントを利用し、追加ボタンとEnterキーの両方で操作できるようにしました。
 				</p>
 			</div>
 		</section>
 		<section id="todo-list-challenges-and-solution" class="challenges-and-solution section">
 			<div class="challenges-and-solution__inner container">
-				<figure class="challenges-and-solution__figure">
-					<img src="" class="challenges-and-solution__img" alt="">
-				</figure>
 				<h2 class="challenges-and-solution__title">Challenges & Solutions</h2>
 				<p class="challenges-and-solution__description">
-					当初は追加ボタンに<span class="code">click</span>イベントを設定していましたが、キーボード操作にも対応する必要があると考えました。そのため、フォームの<span class="code">submit</span>イベントを利用する実装へ変更しました。
-					変更にあたり、ボタンを<span class="code">form</span>要素内に配置し、<span class="code">type="submit"</span>を指定することで、ボタンのクリックとEnterキーのどちらでも同じ処理が実行されるようにしました。
-					フォームイベントの仕組みと、同一の処理を一か所にまとめて管理する実装方法を学びました。
+					当初はタスクの追加ボタンにclickイベントを設定していましたが、キーボード操作にも対応する必要があると考えました。<br>
+					対応策として、Enterキーの押下をトリガーに処理を追加する方法と、formにsubmitイベントを指定する方法がありました。<br>
+					コード記述を最小限に抑え、動作を安定させるため、後者を選択しました。<br><br>
+					Enterキーとボタン、双方によるタスク追加を実装する方法を学びました。
 				</p>
-			</div>
-		</section>
-		<section id="todo-list-performance-and-quality" class="performance-and-quality section">
-			<div class="performance-and-quality__inner container">
-				<h2 class="performance-and-quality__title">Performance & Quality</h2>
-				<table class="score">
-					<caption class="score__caption">Google Lighthouse Score</caption>
-					<thead>
-						<tr>
-							<th class="score__title">Metric</th>
-							<th class="score__title">Score</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th class="score__metric">Performance</th>
-							<td class="score__detail">99</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Accessibility</th>
-							<td class="score__detail">91</td>
-						</tr>
-						<tr>
-							<th class="score__metric">Best Practices</th>
-							<td class="score__detail">100</td>
-						</tr>
-						<tr>
-							<th class="score__metric">SEO</th>
-							<td class="score__detail">100</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 		</section>
 		<section id="todo-list-future-improvements" class="future-improvements section">
 			<div class="future-improvements__inner container">
-				<figure class="future-improvements__figure">
-					<img src="" class="future-improvements__img" alt="">
-				</figure>
 				<h2 class="future-improvements__title">Future Improvements</h2>
 				<p class="future-improvements__description">
-					今後は、アクセシビリティの向上を目的として、ボタン要素をはじめとするUIの実装を見直し、リファクタリングに取り組みたいと考えています。<br>
-					また、実際の利用シーンやターゲットユーザーを明確にしたうえで、必要な機能を検討し、より実用性の高いアプリケーションへ発展させていきたいです。
+					今後は、アクセシビリティの向上に取り組みたいです。<br>
+					ボタン要素をはじめとするUIの見直しと、コードのリファクタリングを行う予定です。<br><br>
+					また、実際の利用シーンやターゲットユーザーの明確化も行います。<br>
+					必要な機能を検討し、より実用性の高いアプリケーションへ発展させたいです。
 				</p>
 			</div>
 		</section>
