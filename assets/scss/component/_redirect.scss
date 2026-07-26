@@ -1,0 +1,41 @@
+.redirect {
+	padding: 2.4rem;
+
+	&__msg {
+		display: flex;
+
+		& > span {
+			display: inline-block;
+			opacity: 0;
+			animation: charMove 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+			letter-spacing: 0.2rem;
+
+			@for $i from 1 through 14 {
+				&:nth-child(#{$i}) {
+					animation-delay: #{$i * 0.04}s;
+				}
+			}
+		}
+	}
+
+	@keyframes charMove {
+		0% {
+			transform: translateY(2rem);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	&__jp {
+		padding: 2.4rem;
+		background-color: var(--color-lightest);
+	}
+
+	&__en {
+		padding: 2.4rem;
+		background-color: var(--color-lightest);
+	}
+}

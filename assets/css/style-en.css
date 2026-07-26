@@ -134,6 +134,79 @@ body {
   margin: 0.4rem 0 0 3rem;
 }
 
+.redirect {
+  padding: 2.4rem;
+}
+.redirect__msg {
+  display: flex;
+}
+.redirect__msg > span {
+  display: inline-block;
+  opacity: 0;
+  animation: charMove 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  letter-spacing: 0.2rem;
+}
+.redirect__msg > span:nth-child(1) {
+  animation-delay: 0.04s;
+}
+.redirect__msg > span:nth-child(2) {
+  animation-delay: 0.08s;
+}
+.redirect__msg > span:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.redirect__msg > span:nth-child(4) {
+  animation-delay: 0.16s;
+}
+.redirect__msg > span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.redirect__msg > span:nth-child(6) {
+  animation-delay: 0.24s;
+}
+.redirect__msg > span:nth-child(7) {
+  animation-delay: 0.28s;
+}
+.redirect__msg > span:nth-child(8) {
+  animation-delay: 0.32s;
+}
+.redirect__msg > span:nth-child(9) {
+  animation-delay: 0.36s;
+}
+.redirect__msg > span:nth-child(10) {
+  animation-delay: 0.4s;
+}
+.redirect__msg > span:nth-child(11) {
+  animation-delay: 0.44s;
+}
+.redirect__msg > span:nth-child(12) {
+  animation-delay: 0.48s;
+}
+.redirect__msg > span:nth-child(13) {
+  animation-delay: 0.52s;
+}
+.redirect__msg > span:nth-child(14) {
+  animation-delay: 0.56s;
+}
+@keyframes charMove {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.redirect__jp {
+  padding: 2.4rem;
+  background-color: var(--color-lightest);
+}
+.redirect__en {
+  padding: 2.4rem;
+  background-color: var(--color-lightest);
+}
+
 .header {
   padding: 2.4rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
