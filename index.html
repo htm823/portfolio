@@ -31,15 +31,34 @@
 
 <body>
 	<main>
-		<div class="redirect container">
-			<p class="redirect__description">Redirecting ...</p>
+		<div class="redirect">
+			<div class="redirect__inner container">
+				<p id="redirect-msg" class="redirect__msg">
+					<span>P</span><span>a</span><span>g</span><span>e</span>&nbsp;
+					<span>l</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span>&nbsp;<span>.</span><span>.</span><span>.</span>
+				</p>
+
+				<!-- If JavaScript is disabled -->
+				<noscript>
+				<p class="redirect__en">
+					JavaScript is disabled.<br>
+					Click the following URL to manually access the site.<br><br>
+					<i class="fa-solid fa-link"></i> <a href="/en/index.html" class="text-link">Portfolio Website of Hatsumi Shimizu</a>
+				</p>
+				<p class="redirect__jp">
+					JavaScriptが有効になっていません。<br>
+					下記URLから手動でサイトにアクセスしてください。<br><br>
+					<i class="fa-solid fa-link"></i> <a href="/ja/index.html" class="text-link">Hatsumi Shimizuのポートフォリオサイト</a>
+				</p>
+				</noscript>
+			</div>
 		</div>
 	</main>
 	<script>
 		'use strict';
 
 		// Redirect based on browser language
-		const lang = navigator.language || 'en';
+		const lang = navigator.language || 'en_GB';
 
 		const target = lang.startsWith('ja')
 			? '/ja/index.html'
